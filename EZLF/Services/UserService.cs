@@ -24,6 +24,8 @@ namespace EZLF.Services
             userManager = new UserManager<User>(userStore);
             roleManager = new RoleManager<IdentityRole>(roleStore);
             // Comment for commit
+            // Comment for commit v2
+            int temp = -1;
 
             if (_operatorRoleId == null)
             {
