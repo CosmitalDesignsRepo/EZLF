@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="b598746729f74de28ec57aec3598c7e0" Name="Diagram1" ZoomLevel="25">
+        <EntityTypeShape EntityType="Model1.ACTION" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.AFFILIATECOMMISSION" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.AFFILIATEPAYMENT" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.AFFILIATEPROGRAM" Width="1.5" PointX="2.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.AFFILIATEPROGRAMS2USERS" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.AFFILIATE" Width="1.5" PointX="4.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.APPLIANCE" Width="1.5" PointX="6.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.ARTICLECOMMENT" Width="1.5" PointX="6.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.ARTICLERATING" Width="1.5" PointX="4.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.ARTICLE" Width="1.5" PointX="6.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.ARTICLES2RELATEDDOCS" Width="1.5" PointX="0.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.ASSOCIATION" Width="1.5" PointX="8.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.AUTOFILLPROFILE" Width="1.5" PointX="8.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.BUILTDOCUMENT" Width="1.5" PointX="2.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.CAMPAIGN" Width="1.5" PointX="10.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.CATEGORy" Width="1.5" PointX="10.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.COSIGNER" Width="1.5" PointX="10.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.CUSTOMDOCUMENT" Width="1.5" PointX="10.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.DOCBUILDERCHECKIN" Width="1.5" PointX="12.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.DOCS2RELATEDARTICLES" Width="1.5" PointX="12.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.DOCS2RELATEDDOCS" Width="1.5" PointX="4.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.DOCUMENT_PROMPTS" Width="1.5" PointX="6.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.DOCUMENTEMAIL" Width="1.5" PointX="12.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.DOCUMENTEMAILSREAD" Width="1.5" PointX="8.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.DOCUMENTFEATURE" Width="1.5" PointX="10.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.DOCUMENTRATING" Width="1.5" PointX="12.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.DOCUMENT" Width="1.5" PointX="14.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.DOCUMENTSTOBUILD" Width="1.5" PointX="14.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.DOCUMENTSTOBUILD_BATCHES" Width="1.5" PointX="12.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.ESIGN_ACTIVITYLOG" Width="1.5" PointX="14.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.ESIGN_ACTIVITYTYPE" Width="1.5" PointX="0.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.ESIGN_REQUEST" Width="1.5" PointX="2.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.ESIGN_STATUS" Width="1.5" PointX="4.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.ESIGN_WORKFLOW" Width="1.5" PointX="6.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.EXPIREDUSERLEASEPROMOEMAIL" Width="1.5" PointX="8.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.FAQ" Width="1.5" PointX="16.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.FAQCATEGORy" Width="1.5" PointX="16.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.FREEUSERSALESEMAIL" Width="1.5" PointX="16.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.GLOSSARY" Width="1.5" PointX="16.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.GLOSSARY2DOCUMENTS" Width="1.5" PointX="16.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.GUARANTOR" Width="1.5" PointX="16.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.INVESTMENTPERFORMANCE" Width="1.5" PointX="18.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.ISOCOUNTRYCODE" Width="1.5" PointX="18.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.LANDLORD" Width="1.5" PointX="8.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.LATEFEE" Width="1.5" PointX="18.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.LEASEOPTIONSBYSTATE" Width="1.5" PointX="10.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.LEAS" Width="1.5" PointX="18.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.LEASESTOBUILD" Width="1.5" PointX="12.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.LENDER_STATES" Width="1.5" PointX="14.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.LINKCATEGORy" Width="1.5" PointX="0.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.LINK" Width="1.5" PointX="2.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.MAILINGLIST" Width="1.5" PointX="4.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.MESSAGE" Width="1.5" PointX="20.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.MESSAGESUBSCRIPTION" Width="1.5" PointX="20.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.NEWSLETTERPROGRESS" Width="1.5" PointX="20.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.OCCUPANT" Width="1.5" PointX="20.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.ORDER" Width="1.5" PointX="20.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.PACKAGE" Width="1.5" PointX="6.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.POLLANSWER" Width="1.5" PointX="14.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.POLLQUESTION" Width="1.5" PointX="22.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.POLL" Width="1.5" PointX="22.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.PROMO" Width="1.5" PointX="22.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.PROMOUS" Width="1.5" PointX="8.75" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.PROPERTy" Width="1.5" PointX="22.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.PURCHASEOPTIONAGREEMENT" Width="1.5" PointX="10.75" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.RA_CONTACT" Width="1.5" PointX="22.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.RA_EMPLOYER" Width="1.5" PointX="22.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.RA_FINANCIALINFO" Width="1.5" PointX="0.75" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.RA_OCCUPANT" Width="1.5" PointX="2.75" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.RA_PET" Width="1.5" PointX="24.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.RA_VEHICLE" Width="1.5" PointX="24.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.RESOURCE" Width="1.5" PointX="4.75" PointY="24.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.RETURNEDPAYMENTFEE" Width="1.5" PointX="24.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.ROICALCULATOR" Width="1.5" PointX="24.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.RULESREG" Width="1.5" PointX="12.75" PointY="24.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.SENDGRIDBLOCKEDDOMAIN" Width="1.5" PointX="14.75" PointY="24.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.STATELANDINGPAGE" Width="1.5" PointX="24.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.STATELAW" Width="1.5" PointX="24.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.SURVEY" Width="1.5" PointX="24.75" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.TA_APPLICANT" Width="1.5" PointX="6.75" PointY="25.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.TA_APPLICATION" Width="1.5" PointX="8.75" PointY="25.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.TA_HOME" Width="1.5" PointX="26.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.TA_INCOME" Width="1.5" PointX="26.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.TA_PROPERTY" Width="1.5" PointX="26.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.TA_TRANSACTIONS" Width="1.5" PointX="26.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.TA_USER" Width="1.5" PointX="14.75" PointY="26.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.TEMP_MAILINGLIST" Width="1.5" PointX="26.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.TEMP_MAILINGLIST_EZEP" Width="1.5" PointX="26.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.TEMP_MAILINGLIST_EZLF_U" Width="1.5" PointX="20.75" PointY="26.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.TENANT" Width="1.5" PointX="26.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.TENANTS2LEASES" Width="1.5" PointX="26.75" PointY="25.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.THIRDPARTYMEMBERSREPORT" Width="1.5" PointX="0.75" PointY="27.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.THREADRATING" Width="1.5" PointX="22.75" PointY="27.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.TRANSACTION" Width="1.5" PointX="28.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.TRANSUNIONAPPLICANT" Width="1.5" PointX="28.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.TRANSUNIONAPPLICATION" Width="1.5" PointX="28.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.TRANSUNIONPROPERTy" Width="1.5" PointX="10.75" PointY="28.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.TRUSTPILOTREVIEW" Width="1.5" PointX="28.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.TUAPPLICATIONSAVE" Width="1.5" PointX="28.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.USER" Width="1.5" PointX="28.75" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.USERS2EMAILS" Width="1.5" PointX="24.75" PointY="28.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.USERTYPE" Width="1.5" PointX="30.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.UTILITy" Width="1.5" PointX="0.75" PointY="30.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.UTILITYCONTACT2LEASES" Width="1.5" PointX="30.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.UTILITYCONTACTINFO" Width="1.5" PointX="30.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.ZIPCODE" Width="1.5" PointX="30.75" PointY="11.75" IsExpanded="true" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
