@@ -14,20 +14,20 @@ namespace EZLF.Services
     public class UserService : BaseServices, IUserService
     {
         // Service Definitions
-        private readonly Entities db;
-        private static string _operatorRoleId;
-        private static readonly object padlock = new object();
-        //private readonly UserManager<User> userManager;
-        private readonly RoleManager<IdentityRole> roleManager;
+        //private readonly Entities db;
+        //private static string _operatorRoleId;
+        //private static readonly object padlock = new object();
+        ////private readonly UserManager<User> userManager;
+        //private readonly RoleManager<IdentityRole> roleManager;
         private const string _userKey = "FrameworkUser";
         private const string _impernatingUserKey = "FrameworkImpersonatingUser";
         readonly log4net.ILog logger = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
         // Service Methods
 
-        public UserService()
-        {
-            // placeholder
-        }
+        //public UserService()
+        //{
+        //    // placeholder
+        //}
 
 
 

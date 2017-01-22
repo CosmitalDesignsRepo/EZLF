@@ -30,7 +30,7 @@ namespace EZLF.Controllers
 
         public AccountController()
         {
-
+            this.acctSvc = new UserService();
         }
 
 
