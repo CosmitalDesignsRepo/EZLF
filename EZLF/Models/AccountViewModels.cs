@@ -50,16 +50,17 @@ namespace EZLF.Models
     {
         [Required]
         [Display(Name = "Email")]
-        [EmailAddress]
-        public string Email { get; set; }
+        public string _UserName { get; set; }
 
         [Required]
         [DataType(DataType.Password)]
         [Display(Name = "Password")]
-        public string Password { get; set; }
-
+        public string _Password { get; set; }
         [Display(Name = "Remember me?")]
-        public bool RememberMe { get; set; }
+        public bool _RememberMe { get; set; }
+        public bool _UserAndSession { get; set; }
+        public string _ReturnUrl { get; set; }
+
     }
 
     public class RegisterViewModel
