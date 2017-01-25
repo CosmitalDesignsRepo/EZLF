@@ -96,8 +96,21 @@
       <HintPath>..\packages\Oracle.ManagedDataAccess.EntityFramework.12.1.2400\lib\net45\Oracle.ManagedDataAccess.EntityFramework.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Syncfusion.Compression.Base">
+      <HintPath>..\..\ezlandlordforms - Copy\www\bin\Syncfusion.Compression.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="syncfusion.core">
+      <HintPath>..\..\ezlandlordforms - Copy\www\bin\syncfusion.core.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.HtmlConverter.Base">
+      <HintPath>..\..\ezlandlordforms - Copy\www\bin\Syncfusion.HtmlConverter.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="syncfusion.pdf.base">
+      <HintPath>..\..\ezlandlordforms - Copy\www\bin\syncfusion.pdf.base.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
@@ -222,9 +235,16 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Class\AccountManagement.cs" />
     <Compile Include="Class\Authentication.cs" />
+    <Compile Include="Class\Caching.cs" />
+    <Compile Include="Class\Documents.cs" />
+    <Compile Include="Class\FlagDescription.cs" />
+    <Compile Include="Class\Helpers\ClassExtension.cs" />
+    <Compile Include="Class\Helpers\EntityUtil.cs" />
     <Compile Include="Class\Helpers\LogInResult.cs" />
     <Compile Include="Class\Helpers\NumericHelper.cs" />
+    <Compile Include="Class\Shared.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />

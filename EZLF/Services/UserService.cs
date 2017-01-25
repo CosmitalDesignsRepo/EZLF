@@ -87,6 +87,35 @@ namespace EZLF.Services
             HttpContext.Current.Session.Clear();
         }
 
+
+
+        #region Register User
+
+        public USER UpdateUser(USER user)
+        {
+            using (var db = new Entities())
+            {
+                var newUser = db.USERS.Where(m => m.ID == user.ID).FirstOrDefault();
+                newUser= ClassExtension.Clone(user);
+                db.SaveChanges();
+                return newUser;
+            }
+
+        }
+
+        public USER CreateUser(USER user)
+        {
+            using (var db = new Entities())
+            {
+                user.ID = db.GetNextSequence(EntityUtil.Sequence.USERS_SEQ);
+                var newUser = db.USERS.Add(user);
+                db.SaveChanges();
+                return newUser;
+            }
+
+        }
+        #endregion
+
         /// <summary>
         /// Force a user to log off
         /// </summary>

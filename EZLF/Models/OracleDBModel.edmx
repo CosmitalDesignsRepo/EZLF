@@ -3351,7 +3351,7 @@
           <Property Name="ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
           <Property Name="EMAIL" Type="String" MaxLength="128" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="PASSWORD" Type="String" MaxLength="32" FixedLength="false" Unicode="false" />
-          <Property Name="USERACCESS" Type="Boolean" />
+          <Property Name="USERACCESS" Type="Single" />
           <Property Name="STARTDATE" Type="DateTime" />
           <Property Name="LASTDATE" Type="DateTime" />
           <Property Name="FIRST" Type="String" MaxLength="68" FixedLength="false" Unicode="false" />
