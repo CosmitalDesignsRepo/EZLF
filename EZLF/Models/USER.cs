@@ -17,7 +17,7 @@ namespace EZLF.Models
         public decimal ID { get; set; }
         public string EMAIL { get; set; }
         public string PASSWORD { get; set; }
-        public Nullable<float> USERACCESS { get; set; }
+        public Nullable<int> USERACCESS { get; set; }
         public Nullable<System.DateTime> STARTDATE { get; set; }
         public Nullable<System.DateTime> LASTDATE { get; set; }
         public string FIRST { get; set; }

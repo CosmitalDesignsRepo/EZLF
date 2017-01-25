@@ -1556,7 +1556,7 @@
           <Property Name="ID" Type="number" Precision="38" Scale="0" Nullable="false" />
           <Property Name="EMAIL" Type="varchar2" MaxLength="128" Nullable="false" />
           <Property Name="PASSWORD" Type="varchar2" MaxLength="32" />
-          <Property Name="USERACCESS" Type="number" Precision="1" Scale="0" />
+          <Property Name="USERACCESS" Type="number" Precision="32" Scale="0" />
           <Property Name="STARTDATE" Type="date" />
           <Property Name="LASTDATE" Type="date" />
           <Property Name="FIRST" Type="varchar2" MaxLength="68" />
@@ -3351,7 +3351,7 @@
           <Property Name="ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
           <Property Name="EMAIL" Type="String" MaxLength="128" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="PASSWORD" Type="String" MaxLength="32" FixedLength="false" Unicode="false" />
-          <Property Name="USERACCESS" Type="Single" />
+          <Property Name="USERACCESS" Type="Int32" />
           <Property Name="STARTDATE" Type="DateTime" />
           <Property Name="LASTDATE" Type="DateTime" />
           <Property Name="FIRST" Type="String" MaxLength="68" FixedLength="false" Unicode="false" />

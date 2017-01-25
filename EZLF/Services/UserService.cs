@@ -8,6 +8,7 @@ using Microsoft.AspNet.Identity.EntityFramework;
 using System.Web.Security;
 using EZLF.Class.Helpers;
 using EZLF.Class;
+using System.Data;
 
 namespace EZLF.Services
 {
@@ -95,10 +96,15 @@ namespace EZLF.Services
         {
             using (var db = new Entities())
             {
-                var newUser = db.USERS.Where(m => m.ID == user.ID).FirstOrDefault();
-                newUser= ClassExtension.Clone(user);
+                //var newUser = db.USERS.Where(m => m.ID == user.ID).FirstOrDefault();
+                //newUser= ClassExtension.Clone(user);
+
+                db.USERS.Attach(user);
+                db.Entry(user).State = System.Data.Entity.EntityState.Modified;
                 db.SaveChanges();
-                return newUser;
+
+              //  db.SaveChanges();
+                return user;
             }
 
         }
