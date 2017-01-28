@@ -407,6 +407,12 @@
     <Compile Include="Models\LINKCATEGORy.cs">
       <DependentUpon>OracleDBModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\LT_COUNTRY.cs">
+      <DependentUpon>OracleDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\LT_STATEPROV.cs">
+      <DependentUpon>OracleDBModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\MAILINGLIST.cs">
       <DependentUpon>OracleDBModel.tt</DependentUpon>
     </Compile>
@@ -453,6 +459,7 @@
     <Compile Include="Models\POLLQUESTION.cs">
       <DependentUpon>OracleDBModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\ProfileModel.cs" />
     <Compile Include="Models\PROMO.cs">
       <DependentUpon>OracleDBModel.tt</DependentUpon>
     </Compile>
@@ -687,6 +694,7 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Account\EditProfile.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

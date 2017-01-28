@@ -104,6 +104,20 @@ namespace EZLF.Controllers
             return View(model);
         }
 
+
+        //
+        // GET: /Account/Login
+        
+        public ActionResult EditProfile()
+        {
+            var model = new EditProfileModel();
+            BaseServices baseSvc = (BaseServices)acctSvc; // cast to base class
+            model.states = acctSvc.GetStates();
+            model.countries = acctSvc.GetCountries();
+            model.user = baseSvc.GetCurrentUser();
+            return View(model);
+        }
+
         //
         // GET: /Account/VerifyCode
         [AllowAnonymous]

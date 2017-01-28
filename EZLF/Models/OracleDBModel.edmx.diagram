@@ -111,6 +111,8 @@
         <EntityTypeShape EntityType="Model1.UTILITYCONTACT2LEASES" Width="1.5" PointX="30.75" PointY="3.75" IsExpanded="true" />
         <EntityTypeShape EntityType="Model1.UTILITYCONTACTINFO" Width="1.5" PointX="30.75" PointY="6.75" IsExpanded="true" />
         <EntityTypeShape EntityType="Model1.ZIPCODE" Width="1.5" PointX="30.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.LT_COUNTRY" Width="1.5" PointX="21.375" PointY="30.75" />
+        <EntityTypeShape EntityType="Model1.LT_STATEPROV" Width="1.5" PointX="13.375" PointY="31.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

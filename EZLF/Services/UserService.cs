@@ -205,5 +205,25 @@ namespace EZLF.Services
         }
 
 
+        //Get countries
+        public List<LT_COUNTRY> GetCountries()
+        {
+            using (var db = new Entities())
+            {
+                var countries = db.LT_COUNTRY.ToList();
+                return countries;
+            }
+        }
+        //Get states
+        public List<LT_STATEPROV> GetStates()
+        {
+            using (var db = new Entities())
+            {
+                var states = db.LT_STATEPROV.ToList();
+                return states;
+            }
+        }
+
+
     }
 }

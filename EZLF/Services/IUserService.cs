@@ -37,5 +37,12 @@ namespace EZLF.Services
         USER GetByID(int ID);
         USER GetByName(string userName);
 
+
+
+
+        //Get countries
+        List<LT_COUNTRY> GetCountries();
+        //Get states
+        List<LT_STATEPROV> GetStates();
     }
 }
