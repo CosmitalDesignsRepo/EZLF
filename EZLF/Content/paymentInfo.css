@@ -1,0 +1,55 @@
+.credit-card-group {
+  position: relative;
+}
+
+.credit-card-group label.hide {
+  display: block !important;
+}
+.card-image {
+  background-image: url("../img/visa--1.png"); 
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 18px;
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  margin: 0 3px -6px 0;
+  width: 25px;
+  z-index: 2;
+  transform: translateY(-50%);
+  transition: all 0.25s linear; 
+}
+  
+.card-image.visa {
+  background-image: url("../img/visa--1.png"); 
+}
+.card-image.mc {
+  background-image: url(../img/mastercard--1.png);
+}
+.card-image.amex {
+  background-image: url("../img/cc-amex.png"); 
+}
+.card-image.disc {
+  background-image: url("../img/discover--1.png"); 
+}
+.card-image.cvv2 {
+  background-image: url("../img/cc-back.png");
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg); 
+}
+
+.card-instruction {
+  font-size: 80%;
+  color: gray; 
+}
+.card-instruction.invalid {
+    color: #b94a48; 
+}
+.card-instruction.valid {
+    color: #089e00; 
+}
+

@@ -1,0 +1,142 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>EZLandlordForms</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    @Styles.Render("~/Content/NewHomecss")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/bundles/NewHomeScript")
+</head>
+<body>
+    <!-- start Burger Header Mobile -->
+    <a class="burger burger-header-mobile open">
+        <div></div>
+    </a>
+    <!-- end Burger Header Mobile -->
+    <!-- start Main Menu -->
+    <div class="main-menu">
+        <div class="menu-head">
+            <div class="logo">
+                <img src="/images/menu-logo.png"></img>
+            </div>
+        </div>
+        <nav class="navbar sidebar">
+
+            <ul>
+                <li class="active">
+                    <a href="#">
+                        <span class="icon icon-main-menu-1" style="font-size: 16px;"></span>
+                        <span class="text">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon icon-main-menu-2" style="font-size: 12px;"></span>
+                        <span class="text">TENANT SCREENING</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon icon-main-menu-3" style="font-size: 17px;"></span>
+                        <span class="text">DOCUMENTS</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon icon-main-menu-4" style="font-size: 17px;"></span>
+                        <span class="text">FORMS</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon icon-star-o" style="font-size: 18px;"></span>
+                        <span class="text">RECOURSES</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon icon-main-menu-6" style="font-size: 12px;"></span>
+                        <span class="text">FORUM</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon icon-main-menu-7" style="font-size: 17px;"></span>
+                        <span class="text">ACCOUNT</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="comment-box">
+            <a href="#" class="icon icon-main-menu-8"></a>
+            <div class="text">
+                Comments About This Page? <br>
+                <a href="#">Send Feedback</a>
+            </div>
+        </div>
+    </div>
+    <!-- end Main Menu -->
+    <!-- start Mobile Header -->
+    <div class="header-mobile">
+        <div class="logo">
+            <img src="/images/menu-logo.png"></img>
+        </div>
+    </div>
+    <!-- end Mobile Header -->
+    <div class="wrapper">
+
+        <!-- start Header -->
+    
+
+        <header class="header">
+            <div class="row">
+                <div class="col-sm-7">
+                    <div class="header-help-block">
+                        <div class="help">
+                            <a href="#">
+                                <img src="/images/online-support-icon.png"></img>
+                                Live help.
+                            </a>
+                        </div>
+                        <div class="online">
+                            <a href="#"> Online Now!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-5">
+                    <div class="account-block">
+                        <a class="upgrade" href="#">Upgrade</a>
+                        <a class="account" href="#">
+                            <img src="/images/avatar-icon.png"></img>
+                            <i class="fa fa-caret-down" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- end Header -->
+        <!-- start Content -->
+        <div class="content">
+
+            <!-- start Sign Box -->
+         
+
+
+
+            @RenderBody()
+            <!-- end Sign Box -->
+
+        </div>
+        <!-- end Content -->
+        <!-- start Footer -->
+        @{Html.RenderAction("Footer", "Home");}
+        <!-- end Footer -->
+    </div>
+
+</body>
+</html>
