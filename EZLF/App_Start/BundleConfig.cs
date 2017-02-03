@@ -25,7 +25,35 @@ namespace EZLF
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
+                      "~/Content/layout2013.css",
                       "~/Content/site.css"));
+
+            bundles.Add(new StyleBundle("~/Content/Homecss").Include(
+                     "~/Content/bootstrap.css",
+                     "~/Content/layout2013.css",
+                     "~/Content/layouthomeadjustments.css",
+                     "~/Content/site.css"));
+
+            bundles.Add(new StyleBundle("~/Content/NewHomecss").Include(
+                    "~/Content/font-awesome.min.css",
+                    "~/Content/icomoon.css",
+                    "~/Content/main.css",
+                    "~/Content/paymentInfo.css",
+                    "~/Content/responsive.css",
+                    "~/Content/template.css",
+                    "~/Content/owl.carousel.css"));
+
+
+            bundles.Add(new ScriptBundle("~/bundles/NewHomeScript").Include(
+                     //"~/Scripts/jquery.inputmask.date.extensions.js",
+                     //"~/Scripts/jquery.inputmask.js",
+                     "~/Scripts/main.js",
+                     "~/Scripts/mobile-plans-table.js",
+                     "~/Scripts/owl.carousel.js",
+                     "~/Scripts/plus-minus-input.js",
+                     //"~/Scripts/validation-credit-cards.js",
+                     "~/Scripts/respond.js"));
+
         }
     }
 }

@@ -1,0 +1,3325 @@
+﻿/*----- Globally styled tags -----*/
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900);
+@import url(https://fonts.googleapis.com/css?family=Norican);
+
+.padding {
+	padding: 5px;
+}
+
+html {
+}
+
+body.ie7 {
+	overflow-y: auto;
+}
+
+body {
+	overflow-y: scroll;
+	font-family: "Segoe UI", "Helvetica", Tahoma, Arial, sans-serif;
+	font-size: 11px;
+	color: #333333;
+	margin: 0;
+	padding: 0;
+	background-color: #f6f6f6;
+	text-align: center;
+	line-height: 1.4em;
+}
+
+	body.ios {
+		-webkit-text-size-adjust: none;
+		-moz-text-size-adjust: none;
+		-ms-text-size-adjust: none;
+		text-size-adjust: none;
+	}
+
+
+	body * {
+		-webkit-overflow-scrolling: touch;
+	}
+
+input, textarea, select {
+	padding: 2px;
+	margin: 2px;
+	font-size: 12px;
+	font-family: "Segoe UI", "Helvetica", Tahoma, Arial, sans-serif;
+	/*border-top: 1px solid #ABADB3;
+	border-left: 1px solid #ABADB3;
+	border-right: 1px solid #E3E9EF;
+	border-bottom: 1px solid #E3E9EF;*/
+	border: 1px solid #AAA;
+	background-color: #FFFFFF;
+	outline-color: #3366cc;
+	-moz-resize: vertical;
+	resize: vertical;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+	textarea.MessageTextArea {
+		max-width: 700px;
+	}
+
+input, textarea {
+	padding: 3px;
+}
+
+
+	input:-moz-placeholder, textarea:-moz-placeholder, input::-webkit-input-placeholder, textarea::-webkit-input-placeholder, input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+		color: #999999 !important;
+	}
+
+	input:hover, textarea:hover, select:hover {
+		/*border-top: 1px solid #5C5F66;
+	border-left: 1px solid #5C5F66;
+	border-right: 1px solid #ABADB3;
+	border-bottom: 1px solid #ABADB3;*/
+		border-color: #666;
+		background-color: #FFFFFF;
+	}
+
+	input:focus, textarea:focus, select:focus {
+		/*border-top: 1px solid #385797;
+	border-left: 1px solid #385797;
+	border-right: 1px solid #93ACDB;
+	border-bottom: 1px solid #93ACDB;*/
+		border-color: #3366cc;
+		background-color: #F4F6FF;
+	}
+
+	input[type="checkbox"], input[type="radio"] {
+		border: 0 solid #FFFFFF;
+		margin: 5px;
+	}
+
+	input[type="image"] {
+		border-width: 0;
+	}
+
+.ios input, .ios select, .ios textarea {
+	border: 1px solid #777777;
+}
+
+	.ios input[type="checkbox"], .ios input[type="radio"] {
+		border: 1px solid #777777;
+		background-color: #777777;
+	}
+
+.ie7 input[type="button"], .ie7 input[type="submit"], .ie7 button {
+	overflow: visible;
+	width: auto;
+}
+
+input[type="button"], input[type="submit"], button, .Button.Disabled {
+	/*First 2 properties added to make buttons look the same in iOS*/
+	-webkit-appearance: none;
+	border-radius: 0px;
+	border-style: outset;
+	font-family: "Segoe UI", "Helvetica", Tahoma, Arial, sans-serif;
+	font-size: 12px;
+	/*text-transform:uppercase;*/
+	border: 1px solid #CCCCCC;
+	padding: 5px 20px;
+	background-color: #F7F7F7;
+	color: #444;
+	font-weight: bold;
+}
+
+	input[type="button"]:hover, input[type="submit"]:hover, input[type="button"]:active, input[type="submit"]:active, button:hover, button:active {
+		background-color: #039 !important;
+		color: White;
+		cursor: pointer;
+	}
+
+	input[type="button"]:active, input[type="submit"]:active, button:active, a.Button:active, a.BlueButton:active, a.YellowButton:active, a.GrayButton:active {
+		/*box-shadow: 0 1px 5px rgba(0,0,0,.6) inset,0 1px 0 rgba(0,0,0,.2);*/
+		-webkit-box-shadow: 0px 0px 7px 2px rgba(0,0,0,0.3) inset;
+		box-shadow: 0px 0px 7px 2px rgba(0,0,0,0.3) inset;
+		cursor: pointer;
+	}
+
+/* Sprite Styles */
+	.spanSprite {
+		display: block; 
+		float: left; 
+		margin: 1px 6px 1px 0;
+	}
+
+	.sprite {
+		display: inline-block;
+	}
+
+	.spriteFix {
+			position: relative;
+			top: -1px;
+			left: -2px;
+		}
+
+	.transparentText,
+	.transparentText div {
+		color: transparent;
+		font-size:0;
+	}
+
+	.transparentText:hover,
+	.transparentText:active {
+		text-decoration: none;
+	}
+
+	/* Home */
+		.button-home-viewfreeforms2-canada-off, 
+		.button-home-viewfreeforms2-canada-on, 
+		.button-home-viewfreeforms2-off, 
+		.button-home-viewfreeforms2-on, 
+		.graphic-home-videowizard-off, 
+		.graphic-home-videowizard-on {
+			background: url(//ezlf-plinersolutionsi.netdna-ssl.com/images/sprites-home.png) no-repeat;
+		}
+
+		.button-home-viewfreeforms2-canada-off{
+			background-position: -249px -326px ;
+			width: 320px;
+			height: 106px;
+		}
+
+		.button-home-viewfreeforms2-canada-on,
+		.button-home-viewfreeforms2-canada-off:hover
+		{
+			background-position: -249px -217px ;
+			width: 320px;
+			height: 106px;
+		}
+
+		.button-home-viewfreeforms2-off{
+			background-position: -249px -108px ;
+			width: 320px;
+			height: 106px;
+		}
+
+		.button-home-viewfreeforms2-on,
+		.button-home-viewfreeforms2-off:hover
+		{
+			background-position: -249px 0;
+			width: 320px;
+			height: 106px;
+		}
+
+		.graphic-home-videowizard-off{
+			background-position: 0 -122px ;
+			width: 247px;
+			height: 120px;
+		}
+
+		.graphic-home-videowizard-on,
+		.graphic-home-videowizard-off:hover{
+			background-position: 0 0;
+			width: 247px;
+			height: 120px;
+		}
+
+	/* Nav */
+		.btn-bg-homenav-gold-off, .btn-bg-homenav-gold-on {
+			background: url(//ezlf-plinersolutionsi.netdna-ssl.com/images/sprites-homenav.png) -145px top no-repeat;
+		}
+
+		.btn-bg-homenav-gold-off{
+			background-position: -145px -31px;
+			width: 295px;
+			height: 27px;
+		}
+
+		.btn-bg-homenav-gold-on {
+			width: 295px;
+			height: 27px;
+		}
+
+	/* Documents */
+		.create_icon, .edit_icon_lb, .edit_icon, .email_read, .icon_doclogo, .icon_statespecific, .icon_windowenvelope{
+			background: url(//ezlf-plinersolutionsi.netdna-ssl.com/images/sprites-documents.png) no-repeat;
+			width: 16px;
+			height: 16px;
+		}
+
+		.edit_icon{
+			background-position: -120px 0;
+		}
+
+		.create_icon{
+			background-position: -100px 0;
+		}
+
+		.edit_icon_lb{
+			background-position: -80px 0;
+		}
+
+		.email_read{
+			background-position: -60px 0;
+		}
+
+		.icon_doclogo{
+			background-position: -40px 0;
+		}
+
+		.icon_statespecific{
+			background-position: -20px 0;
+		}
+
+		.icon_windowenvelope{
+			background-position: 0 0;
+			width: 18px;
+		}
+
+	/* Social Icons */
+		.facebook_icon, .linkedin_icon, .twitter_icon, .youtube_icon, .rss_icon, .googleplus_icon {
+			background: url(//ezlf-plinersolutionsi.netdna-ssl.com/images/sprites-social-icons.png) no-repeat -2px -6px;
+			width: 40px;
+			height: 40px;
+		}
+
+		.linkedin_icon {
+			background-position: -48px -6px;
+		}
+
+		.youtube_icon {
+			background-position: -2px -52px;
+		}
+
+		.twitter_icon {
+			background-position: -94px -6px;
+		}
+
+		.googleplus_icon {
+			background-position: -94px -98px;
+		}
+
+		.rss_icon {
+			background-position: -140px -52px;
+		}
+
+/* End - Sprite Styles */
+
+/*The following button classes are added for experimentation, and do not function properly at the moment without selectors. 
+Related to ticket 1061 in redmine (http://redmine.pliner.com/issues/1061)
+*/
+.btn {
+	background: url(//ezlf-plinersolutionsi.netdna-ssl.com/images/button-bg-gradient.png) repeat-x;
+	border: 1px #ccc solid;
+	color: #fff;
+	font-size: 13px;
+	padding: 4px 10px;
+	-webkit-text-shadow: 0px 0px 4px rgba(0,0,0,0.4);
+	text-shadow: 0px 0px 4px rgba(0,0,0,0.4);
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+	.btn:hover {
+		cursor: pointer;
+	}
+
+	.btn:active {
+		-webkit-box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.3) inset;
+		box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.3) inset;
+	}
+
+
+.blue {
+	background-color: #3b75c2;
+	border-color: #255a9f;
+}
+
+	.blue:hover {
+		background-color: #255a9f;
+	}
+
+.gold {
+	background-color: #c29700;
+	border-color: #957400;
+}
+
+	.gold:hover {
+		background-color: #957400;
+	}
+
+.yellow {
+	background-color: #E6B848;
+	border-color: #B8933A;
+}
+
+	.yellow:hover {
+		background-color: #CFA641;
+	}
+
+.gray {
+	background-color: #bbb;
+	border-color: #999;
+}
+
+	.gray:hover {
+		background-color: #999;
+	}
+
+.red {
+	background-color: #ff7171;
+	border-color: #dc4f4f;
+}
+
+	.red:hover {
+		background-color: #dc4f4f;
+	}
+
+.green {
+	background-color: #99cc00;
+	border-color: #669900;
+}
+
+	.green:hover {
+		background-color: #669900;
+	}
+
+.rounded {
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-khtml-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.btn-nav-signup, input[type="button"].btn-nav-signup, button.btn-nav-signup {
+	background: #f5b300 url(//ezlf-plinersolutionsi.netdna-ssl.com/images/sprites-homenav-cropped.png) right top no-repeat;
+	height: 27px;
+	padding: 5px 22px 4px 8px;
+	-webkit-text-shadow: 0px 1px 3px #fff;
+	text-shadow: 0px 1px 3px #fff;
+	border-radius: 3px;
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #0050b3;
+	font-family: Trebuchet,"Trebuchet MS",Arial,Helvetica,Sans-Serif;
+}
+
+.ie10 .btn-nav-signup, .ie9 .btn-nav-signup, .osx .btn-nav-signup {
+	padding-top: 7px;
+	padding-bottom: 6px;
+}
+
+.btn-nav-signup:hover, input[type="button"].btn-nav-signup:hover, button.btn-nav-signup:hover {
+	background-color: #f5b300 !important;
+	background-position: right -31px;
+}
+
+.btn-nav-signup:active, input[type="button"].btn-nav-signup:active, button.btn-nav-signup:active {
+	-webkit-box-shadow: 0 0 7px 2px rgba(0,0,0,0.3) inset;
+	box-shadow: 0 0 7px 2px rgba(0,0,0,0.3) inset;
+}
+/*End of experimental button classes*/
+
+img {
+	border-width: 0;
+}
+
+th {
+	text-align: left;
+}
+
+h1, .StateAssist h1, .ContentInner .StateAssist h1 {
+	font-family: "Segoe UI", "Helvetica", Tahoma, Arial, sans-serif;
+	color: #039;
+	font-size: 26px;
+	line-height: 30px;
+	font-weight: bold;
+	margin-bottom: 5px;
+	margin-top: 0;
+}
+
+h2, .StateAssist h2, .ContentInner .StateAssist h2 {
+	font-family: "Segoe UI", "Helvetica", Tahoma, Arial, sans-serif;
+	font-size: 15px;
+	line-height: 20px;
+	margin: 0 0 6px 0;
+	color: #3366cc;
+	font-weight: bold;
+}
+
+h3, .StateAssist h3, .ContentInner .StateAssist h3 {
+	font-family: "Segoe UI", "Helvetica", Tahoma, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	margin: 0 0 4px 0;
+	font-weight: lighter;
+}
+
+fieldset {
+	border: 1px solid #CCCCCC;
+	border-color: #B6C0D3;
+	padding: 1em;
+}
+
+legend {
+	font-weight: bold;
+}
+
+hr {
+	color: #B4B4B4;
+	border: 0px;
+	background-color: #10147C;
+	height: 1px;
+}
+
+a, a:link, a:visited {
+	color: #FFF;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+	a:hover, a:active {
+		color: #039;
+		text-decoration: underline;
+	}
+
+	a.biglink, a.biglink:visited {
+		font-size: 11pt;
+		font-weight: bold;
+		text-decoration: none;
+		line-height: 1.5em;
+	}
+
+		a.biglink:hover, a.biglink:active {
+			color: #4a6acd;
+			text-decoration: underline;
+		}
+
+/*----- Layout styles -----*/
+.clearfix {
+	content: ".";
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+
+/*!
+ *  Font Awesome 4.3.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+/* FONT PATH
+ * -------------------------- */
+/*@font-face {
+  font-family: 'FontAwesome';
+  src: url('fonts/fontawesome-webfont.eot?v=4.3.0');
+  src: url('fonts/fontawesome-webfont.eot?#iefix&v=4.3.0') format('embedded-opentype'), 
+	   url('fonts/fontawesome-webfont.woff2?v=4.3.0') format('woff2'), 
+	   url('fonts/fontawesome-webfont.woff?v=4.3.0') format('woff'), 
+	   url('fonts/fontawesome-webfont.ttf?v=4.3.0') format('truetype'), 
+	   url('fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.fa {
+	display: inline-block;
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-moz-transform: translate(0, 0);
+	-ms-transform: translate(0, 0);
+	-o-transform: translate(0, 0);
+	-webkit-transform: translate(0, 0);
+	transform: translate(0, 0);
+}*/
+/* makes the font 33% larger relative to the icon container */
+/*.fa-lg {
+  font-size: 1.33333333em;
+  line-height: 0.75em;
+  vertical-align: -15%;
+}
+.fa-2x {
+  font-size: 2em;
+}
+.fa-3x {
+  font-size: 3em;
+}
+.fa-4x {
+  font-size: 4em;
+}
+.fa-5x {
+  font-size: 5em;
+}
+.fa-fw {
+  width: 1.28571429em;
+  text-align: center;
+}
+.fa-ul {
+  padding-left: 0;
+  margin-left: 2.14285714em;
+  list-style-type: none;
+}
+.fa-ul > li {
+  position: relative;
+}
+.fa-li {
+  position: absolute;
+  left: -2.14285714em;
+  width: 2.14285714em;
+  top: 0.14285714em;
+  text-align: center;
+}
+.fa-li.fa-lg {
+  left: -1.85714286em;
+}
+.fa-border {
+  padding: .2em .25em .15em;
+  border: solid 0.08em #eeeeee;
+  border-radius: .1em;
+}
+.pull-right {
+  float: right;
+}
+.pull-left {
+  float: left;
+}
+.fa.pull-left {
+  margin-right: .3em;
+}
+.fa.pull-right {
+  margin-left: .3em;
+}*/
+
+/* Icons */
+/*.fa-star-half:before {
+  content: "\f089";
+}
+
+.fa-star-half-empty:before,
+.fa-star-half-full:before,
+.fa-star-half-o:before {
+  content: "\f123";
+}
+
+.fa-star:before {
+  content: "\f005";
+}
+.fa-star-o:before {
+  content: "\f006";
+}
+
+.fa-search:before {
+  content: "\f002";
+}*/
+
+.Stars {
+	float: left;
+	display: block;
+}
+
+	.Stars .fa-star.on,
+	.Stars .fa-star-half-o.on {
+		color: #CC9900;
+	}
+
+	.Stars .fa-star.off,
+	.Stars .fa-star-half-o.off {
+		color: #CCC;
+	}
+
+	.Stars .RatingText {
+		margin-left: 10px;
+		font-size: 13px;
+		font-weight: 400;
+	}
+
+	.Stars.RatingContainer {
+		padding-right: 0;
+		width: 160px;
+	}
+
+/*.fa-star,
+.fa-star-half-o {
+	padding-right: 2px;
+	font-size: 13px;
+}
+
+	.fa-star.on,
+	.fa-star-half-o.on {
+		color: #CC9900;
+	}
+
+	.fa-star.off,
+	.fa-star-half-o.off {
+		color: #CCC;
+	}*/
+
+/**************************************/
+
+.urgent {
+	font-weight: bold;
+	color: #B81818;
+}
+
+#AboveHeaderContainer {
+	width: 990px;
+	text-align: left;
+	margin: 0 auto;
+	background-color: #FFFFFF;
+	height: 76px;
+	margin-bottom: 8px;
+	display: none;
+}
+
+#TemplateContainer {
+	border: 1px solid #FFFFFF;
+	width: 988px;
+	text-align: left;
+	margin: 0 auto;
+	background-color: #FFFFFF;
+	-webkit-box-shadow: 0 1px 5px rgba(0,0,0,0.3);
+	box-shadow: 0 1px 5px rgba(0,0,0,0.3);
+}
+
+#HeaderOuter {
+	background-color: #e9f1fe;
+}
+
+#HeaderInner, #NavInner, #ContentInner, #FeedbackInner, #FeedbackInnerLoggedOut, #EndorsementsInner, #FooterInner {
+	width: 1000px;
+	margin: 0 auto;
+    background-color: #f6f6f6;
+	position: relative;
+}
+
+#HeaderOuter, #NavOuter, #ContentOuter, #FeedbackOuter, #EndorsementsOuter, #FooterOuter {
+	min-width: 1020px;
+    background-color: #f6f6f6;
+   
+    /*margin: 0 auto;*/
+}
+
+#HeaderInner {
+	height: 93px;
+}
+
+#HeaderLogo {
+	position: absolute;
+	top: 10px;
+	left: 0;
+}
+
+#HeaderTagline {
+	position: absolute;
+	top: 57px;
+	left: 264px;
+	font-size: 16px;
+	color: #666;
+}
+
+/*.HeaderSlogan
+{
+	position: absolute;
+	top: 53px;
+	left: 292px;
+}*/
+
+#HeaderInner #LiveHelpButton, #HeaderInner #FreeTrialButton, #HeaderInner #StateSelectionButton {
+	display: block;
+	height: 43px;
+	width: 233px;
+	font-size: 10px;
+	line-height: 13px;
+	position: absolute;
+	right: -3px;
+	top: 44px;
+	padding: 6px 0 0 14px;
+}
+
+	#HeaderInner #LiveHelpButton, #HeaderInner #LiveHelpButton:link, #HeaderInner #LiveHelpButton:visited {
+		top: 25px;
+		padding:0;
+		height: 48px;
+		width:250px;
+		background: none;
+		text-decoration: none;
+		overflow:hidden;
+	}
+
+		#HeaderInner #LiveHelpButton:hover, #HeaderInner #LiveHelpButton:active {
+			text-decoration: none;
+		}
+
+	#HeaderInner #FreeTrialButton, #HeaderInner #FreeTrialButton:link, #HeaderInner #FreeTrialButton:visited {
+		background: transparent url(//ezlf-plinersolutionsi.netdna-ssl.com/images/layout2009/headerbuttons/header_tour_on.jpg) no-repeat scroll left top;
+		text-decoration: none;
+		color: #584501;
+		padding-left: 50px;
+		width: 197px;
+	}
+
+		#HeaderInner #FreeTrialButton:hover, #HeaderInner #FreeTrialButton:active {
+			background-image: url(//ezlf-plinersolutionsi.netdna-ssl.com/images/layout2009/headerbuttons/header_tour_off.jpg);
+			text-decoration: none;
+			color: #000000;
+		}
+
+	#HeaderInner #StateSelectionButton, #HeaderInner #StateSelectionButton:link, #HeaderInner #StateSelectionButton:visited {
+		background: transparent url(//ezlf-plinersolutionsi.netdna-ssl.com/images/layout2009/headerbuttons/header_US_off.jpg) no-repeat scroll left top;
+		text-decoration: none;
+	}
+
+		#HeaderInner #StateSelectionButton:hover, #HeaderInner #StateSelectionButton:active {
+			background-image: url(//ezlf-plinersolutionsi.netdna-ssl.com/images/layout2009/headerbuttons/header_US_on.jpg);
+			text-decoration: none;
+		}
+
+
+#NavOuter {
+	background-color: #3366cc;
+}
+
+#NavInner {
+	min-height: 45px;
+	background-color: #3366cc;
+	z-index:1999;
+}
+
+	#NavInner a > div {
+		font-size: 14px;
+		color: rgba(255,255,255,0.8);
+	}
+
+.oldie #NavInner a, .ie7 #NavInner a, .ie8 #NavInner a {
+	color: #d6e0f5;
+}
+
+#NavInner a:hover, #NavInner a > div:hover, #NavInner a > div.HasOpenPulldownMenu{
+	color: #fff;
+	text-decoration: none;
+	background-color: #039;
+	background-color:rgba(0,51,153,0.5);
+}
+
+#NavInner a > div.active, #NavInner a > div.HasClosedPulldownMenuActive, #NavInner a > div.HasOpenPulldownMenuActive {
+	color: #fff;
+	/*background-color:rgba(0,51,153,0.5);*/
+	background-color: #039;
+}
+
+#NavInner a > div {
+	height: 45px;
+	line-height: 45px;
+	padding: 0px 10px;
+	float: left;
+}
+/*IE doesn't respect the parent line-height attribute for some reason, so this needs to be specified manually*/
+	#NavInner .fa-home {
+		line-height: 45px;
+	}
+
+#NavInner div.HomeLink, #NavInner div.HomeLinkActive {
+	/*background-image: url(//ezlf-plinersolutionsi.netdna-ssl.com/images/layout2013/icon-menu-home-off.png);*/
+	/*background-image: url(//ezlf-plinersolutionsi.netdna-ssl.com/images/layout2013/icon-menu-home-large-on.png);
+	background-repeat: no-repeat;
+	background-position: 20px center;
+	width: 20px;
+	padding: 0px 20px;
+	font-size: 1px;
+	color: transparent;*/
+	font-size:24px;
+	opacity: .8;
+	filter: alpha(opacity=80);
+}
+
+	#NavInner div.HomeLink:hover, #NavInner div.HomeLinkActive, #NavInner div.HomeLinkActive:hover {
+		/*background-image: url(//ezlf-plinersolutionsi.netdna-ssl.com/images/layout2013/icon-menu-home-on.png);*/
+		/*color:transparent;*/
+		opacity: 1;
+		filter: alpha(opacity=100);
+	}
+
+/*#HeaderContainer  
+{
+	background: #B9D1FF url(//ezlf-plinersolutionsi.netdna-ssl.com/images/layout2009/header_bg.jpg) repeat-x scroll left top;
+	background-image: linear-gradient(bottom, rgb(186,211,255) 0%, rgb(236,241,253) 100%);
+	background-image: -o-linear-gradient(bottom, rgb(186,211,255) 0%, rgb(236,241,253) 100%);
+	background-image: -moz-linear-gradient(bottom, rgb(186,211,255) 0%, rgb(236,241,253) 100%);
+	background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, rgb(186,211,255)), color-stop(1, rgb(236,241,253)));
+	background-image: -ms-linear-gradient(bottom, rgb(186,211,255) 0%, rgb(236,241,253) 100%);
+	height: 90px;
+	position: relative;
+}*/
+
+#ContentOuter {
+	text-align: left;
+	background-color: #fff;
+	/*padding-bottom: 10px;*/
+}
+
+#ContentInner {
+	text-align: left;
+	padding: 10px;
+}
+
+#BodyContent {
+	font-size: 13px;
+	font-family: "Segoe UI", "Helvetica", Tahoma, Arial, sans-serif;
+}
+
+#ContentLeftColumn {
+	float: left;
+	width: 200px;
+	padding: 0 10px 10px 0;
+}
+
+#ContentRightColumn {
+	float: right;
+	width: 780px;
+	padding: 0 0 10px 0;
+}
+
+#FeedbackOuter, #EndorsementsOuter {
+	border-bottom: 1px solid #ccc;
+}
+
+#FeedbackInnerLoggedOut, #EndorsementsInner {
+	height: 75px;
+	padding: 20px 0;
+	text-align: left;
+}
+
+#FeedbackBarLoggedOut, #EndorsementsBar {
+	height: 75px;
+	clear: both;
+	margin: 10px 0 0 0;
+	overflow: visible;
+	color: #7A7A7A;
+}
+
+#EndorsementsBar td {
+	text-align: center;
+}
+
+#FeedbackInner {
+	height: 25px;
+	text-align: left;
+}
+
+#FeedbackBar {
+	height: 27px;
+	clear: both;
+	margin: 10px 0 0 0;
+	overflow: visible;
+}
+
+#FeedbackInnerLoggedOut, #EndorsementsInner {
+	height: 75px;
+	padding: 20px 0;
+	text-align: left;
+}
+
+#FeedbackBarLoggedOut, #EndorsementsBar {
+	height: 75px;
+	clear: both;
+	margin: 10px 0 0 0;
+	overflow: visible;
+	color: #7A7A7A;
+}
+
+	#FeedbackBar #FeedbackQuote {
+		margin: -17px 10px 0 0;
+		vertical-align: middle;
+	}
+
+	#FeedbackBar #GetHelp {
+		position: relative;
+		float: right;
+		padding: 2px 0 0 0;
+	}
+
+
+	#FeedbackBarLoggedOut #ContactUs {
+		float: left;
+		width: 315px;
+	}
+
+	#FeedbackBarLoggedOut #CallUs {
+		float: right;
+		min-width: 350px;
+	}
+
+	#FeedbackBarLoggedOut .ContactTitle {
+		font-size: 35px;
+	}
+
+	#FeedbackBarLoggedOut .ContactText {
+		font-size: 17px;
+		margin-top: 8px;
+		display: block;
+	}
+
+#FooterInner {
+	margin-top: 15px;
+	margin-bottom: 50px;
+	text-align: left;
+	position: relative;
+	padding: 10px 8px 10px 8px;
+	height: 51px;
+	font-size: 10px;
+	line-height: 14px;
+	color: #666666;
+	clear: both;
+}
+
+#FooterContainer a, #FooterContainer a:link, #FooterContainer a:visited, #FeedbackBar a, #FeedbackBar a:link, #FeedbackBar a:visited {
+	color: #3366cc;
+	text-decoration: none;
+}
+
+	#FooterContainer a:hover, #FooterContainer a:active, #FeedbackBar a:hover, #FeedbackBar a:active {
+		/*color: #D4AF00;*/
+		text-decoration: underline;
+	}
+
+.HomeDocsList {
+	font-size: 13px;
+	line-height: 18px;
+}
+
+	.HomeDocsList h3 {
+		font-weight: bold;
+		font-size: 12px;
+		color: #666;
+	}
+
+	.HomeDocsList h4 {
+		margin: 0;
+	}
+
+.HomeRow3 {
+	font-size: 12px;
+	line-height: 16px;
+	color: #333;
+}
+
+	.HomeRow3 h3 {
+		font-size: 18px;
+		line-height: 20px;
+	}
+
+
+/*
+#MenuContainer a.HasOpenPulldownMenu { 
+	color: #FFD310;
+}*/
+
+.PulldownContainerOuter {
+	width: 216px;
+	/*background: transparent url(//ezlf-plinersolutionsi.netdna-ssl.com/images/layout2009/header_nav_drop_bottom.png) no-repeat scroll center bottom;*/
+	padding: 0 0 9px 0;
+	position: absolute;
+	display: none;
+	font-family: "Segoe UI", "Helvetica", Tahoma, Arial, sans-serif;
+}
+
+.PulldownContainerInner {
+	/*border:1px solid #ccc;*/
+	/*border-left:1px solid #ccc;*/
+	border-top:none;
+	text-align: left;
+	display: block;
+	margin: 0 4px;
+	padding: 0;
+	box-shadow:0px 1px 4px 0 rgba(0,0,0,0.4);
+	/*background: transparent url(//ezlf-plinersolutionsi.netdna-ssl.com/images/layout2009/header_nav_drop_body.png) repeat-y scroll center top;*/
+	overflow: hidden;
+	z-index:1998;
+}
+
+	.PulldownContainerInner li {
+		display: block;
+		padding: 0;
+		margin: -1px 0 0 0;
+		border-top: 1px solid #eee;
+		list-style-type: none;
+	}
+
+	.PulldownContainerInner a, .PulldownContainerInner a:link, .PulldownContainerInner a:visited {
+		display: block;
+		padding: 5px 10px;
+		background-color: #FFFFFF;
+		color: #3159AD;
+		text-decoration: none;
+		font-weight: bold;
+		font-size: 12px;
+	}
+
+		.PulldownContainerInner a:hover, .PulldownContainerInner a:active {
+			/*background-color: #F7F3F7;*/
+			background-color:#36C;
+			color:white;
+			text-decoration: none;
+		}
+
+#DocumentSearchForm {
+	border: 1px solid #CCCCCC; 
+	background-color: #F5F5F5; 
+	padding: 4px 10px; 
+	margin: 0 0 10px 0;
+}
+
+#InputDocumentSearchText {
+	width: 165px; 
+	margin: 0 0 0 10px; 
+	vertical-align: middle;
+}
+
+#InputDocumentSearchButton {
+	border-width: 0; 
+	background-color: #9F9F9F; 
+	color: #FFFFFF; 
+	font-size: 11px; 
+	font-family: Arial, Helvetica, Sans-Serif; 
+	text-align: center; 
+	width: 65px; 
+	height: 21px; 
+	vertical-align: middle; 
+	padding: 2px;
+}
+
+.ButtonLink {
+	text-decoration:none !important;
+}
+
+/*----- Common styles -----*/
+
+/* ----- Dialog Styles ----- */
+
+
+/* Fade-in effects for Dialogs */
+@keyframes dialogFadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes dialogFadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@-moz-keyframes dialogFadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+/* not yet supported in IE9 or 10beta, commented out so it won't deploy
+@-ms-keyframes dialogFadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+*/
+.Dialog, .ErrorDialog {
+	-webkit-animation-name: dialogFadeIn;
+	-webkit-animation-timing-function: ease-in;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-duration: 0.15s;
+	-moz-animation-name: dialogFadeIn;
+	-moz-animation-timing-function: ease-in;
+	-moz-animation-iteration-count: 1;
+	-moz-animation-duration: 0.15s;
+	-o-animation-name: dialogFadeIn;
+	-o-animation-timing-function: ease-in;
+	-o-animation-iteration-count: 1;
+	-o-animation-duration: 0.15s;
+	animation-name: dialogFadeIn;
+	animation-timing-function: ease-in;
+	animation-iteration-count: 1;
+	animation-duration: 0.15s;
+	position: absolute;
+	z-index: 2001;
+	padding: 5px;
+	/*border: 6px solid #CECFCE;*/
+	border-radius: 3px;
+	background-color: #FFFFFF;
+	text-align: left;
+	-webkit-box-shadow: 0 1px 10px rgba(90,90,90,0.7);
+	box-shadow: 0 1px 10px rgba(90,90,90,0.7);
+	/*font-size:14px;*/
+}
+
+	.Dialog > div:nth-of-type(2), .ErrorDialog > div:nth-of-type(2) {
+		padding: 10px;
+		padding-top: 0;
+	}
+
+.ErrorDialog {
+	z-index: 3001;
+}
+
+.Dialog h1 {
+	width: 100%;
+	text-align: left;
+	line-height: 26px;
+	/*z-index:2001;*/
+	color: #3366cc;
+	font-family: "Segoe UI", "Helvetica", Tahoma, Arial, sans-serif;
+	font-size: 19px;
+	font-weight: bold;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	margin-top: 5px;
+	/*text-transform:uppercase;*/
+}
+
+.Dialog div h1 {
+	margin-top: 0;
+	margin-left: 0;
+}
+
+.oldie .Dialog h1, .ie7 .Dialog h1 {
+	width: 90%;
+}
+
+.DialogCurtain, .ErrorDialogCurtain {
+	/*-webkit-animation-name: dialogFadeIn;
+	-webkit-animation-timing-function: ease-in;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-duration: 0.01s;
+	-moz-animation-name: dialogFadeIn;
+	-moz-animation-timing-function: ease-in;
+	-moz-animation-iteration-count: 1;
+	-moz-animation-duration: 0.01s;
+	-o-animation-name: dialogFadeIn;
+	-o-animation-timing-function: ease-in;
+	-o-animation-iteration-count: 1;
+	-o-animation-duration: 0.01s;
+	animation-name: dialogFadeIn;
+	animation-timing-function: ease-in;
+	animation-iteration-count: 1;
+	animation-duration: 0.01s;*/
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(20,20,20,0.3);
+	/*background-color:Black;
+	opacity:0.5;
+	filter:alpha(opacity=50);*/
+	margin: 0 auto;
+	z-index: 2000;
+}
+
+.oldie .DialogCurtain, .ie7 .DialogCurtain, .ie8 .DialogCurtain {
+	background-color: Black !important;
+	opacity: 0.3;
+	filter: alpha(opacity=30);
+}
+
+.ErrorDialogCurtain {
+	z-index: 3000;
+}
+
+.oldie .DialogCurtain, .ios .DialogCurtain {
+	position: absolute;
+}
+
+.DialogClose {
+	position: relative;
+	float: right;
+	background: transparent url('//ezlf-plinersolutionsi.netdna-ssl.com/images/icon-close.gif') no-repeat top left;
+	background-size:20px 20px;
+	width: 20px;
+	height: 20px;
+	opacity: 0.8;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5) {
+	.DialogClose {
+		background: transparent url('//ezlf-plinersolutionsi.netdna-ssl.com/images/icon-close@2x.gif') no-repeat top left;
+		background-size:20px 20px;
+	}
+}
+
+.DialogClose:hover {
+	cursor: pointer;
+	opacity: 1;
+}
+
+#FreeLeaseDownloadButton, #PremiumLeaseDownloadButton {
+	width: 225px;
+	height: 27px;
+	margin: 0 auto;
+}
+
+	#FreeLeaseDownloadButton:hover, #PremiumLeaseDownloadButton:hover {
+		cursor: pointer;
+	}
+
+#PremiumEditButton, #PremiumUpgradeButton {
+	-webkit-transition: margin .1s linear;
+	-webkit-animation-name: dialogFadeIn;
+	-webkit-animation-timing-function: ease-in;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-duration: 0.1s;
+	-moz-transition: margin .1s linear;
+	-moz-animation-name: dialogFadeIn;
+	-moz-animation-timing-function: ease-in;
+	-moz-animation-iteration-count: 1;
+	-moz-animation-duration: 0.1s;
+	-o-transition: margin .1s linear;
+	-o-animation-name: dialogFadeIn;
+	-o-animation-timing-function: ease-in;
+	-o-animation-iteration-count: 1;
+	-o-animation-duration: 0.1s;
+	transition: margin .1s linear;
+	animation-name: dialogFadeIn;
+	animation-timing-function: ease-in;
+	animation-iteration-count: 1;
+	animation-duration: 0.1s;
+}
+
+#PremiumEditButton {
+	float: left;
+	margin-left: 10px;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 12px;
+	vertical-align: top;
+}
+
+#PremiumUpgradeButton {
+	float: right;
+	text-align: right;
+	margin-right: 10px;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 12px;
+	vertical-align: top;
+}
+
+#PremiumEditButton:hover {
+	margin-left: -5px;
+	padding-right: 15px;
+}
+
+#PremiumUpgradeButton:hover {
+	margin-right: -5px;
+	padding-left: 15px;
+}
+
+#PremiumEditButton:hover, #PremiumEditButton a:hover, #PremiumUpgradeButton:hover, #PremiumUpgradeButton a:hover {
+	color: #36C;
+	cursor: pointer;
+}
+
+/* ----- Lease Wizard Styles ------ */
+
+.ExpandableIcon {
+	display: inline-block;
+	background-image: url(//ezlf-plinersolutionsi.netdna-ssl.com/images/expand-icon-red.png);
+	height: 16px;
+	width: 16px;
+	vertical-align: bottom;
+	/*margin: 5px 5px 0 0;*/
+	cursor: pointer;
+}
+
+.ExpandableIcon.Expanded {
+	background-image: url(//ezlf-plinersolutionsi.netdna-ssl.com/images/collapse-icon-red.png);
+}
+
+#floatingMenu {
+	width: 200px;
+	position: relative;
+}
+
+	#floatingMenu.float {
+		position: fixed;
+		top: 10px;
+	}
+
+	#floatingMenu.bottom {
+		position: absolute;
+		bottom: 10px;
+	}
+
+.LeaseWizardNavigation li,
+.InfoColumnSubmenu li,
+.success,
+.documentList table, .documentList div.documentListItem, .documentList div.documentListItemActive,
+.searchTableRow td,
+.GrayGradientTable tr,
+.HorizontalListItem, .HorizontalListItemHighlighted, .HorizontalList li {
+	background-image: url("//ezlf-plinersolutionsi.netdna-ssl.com/images/layout2009/loggedinhome/cell_listgradient.png");
+	background-repeat: repeat-x;
+	background-position: bottom left;
+}
+
+.LeaseWizardNavigation {
+	display: block;
+	margin: 0 0 9px 0;
+	padding: 0;
+	border: 1px solid #ccc;
+	border-bottom-width: 0;
+	font-family: "Segoe UI", "Helvetica", Tahoma, Arial, sans-serif;
+}
+
+	.LeaseWizardNavigation li {
+		display: block;
+		margin: 0;
+		list-style-type: none;
+		border-bottom: 1px solid #ccc;
+		background-color: white;
+		/*background: #EDEDED url(//ezlf-plinersolutionsi.netdna-ssl.com/images/layout2009/leftnav/gradient.jpg) repeat-x scroll center top;*/
+	}
+
+		.LeaseWizardNavigation li a, .LeaseWizardNavigation li a:link, .LeaseWizardNavigation li a:visited {
+			display: block;
+			font-family: "Segoe UI", "Helvetica", Tahoma, Arial, sans-serif;
+			font-size: 11px;
+			color: #666666;
+			/*font-weight: lighter;*/
+			text-decoration: none;
+			padding: 6px 10px 6px 10px;
+			cursor: pointer;
+		}
+
+			.LeaseWizardNavigation li a:hover, .LeaseWizardNavigation li a:active {
+				background-color: #039;
+				color: White;
+			}
+
+		.LeaseWizardNavigation li.Highlighted a, .LeaseWizardNavigation li.Highlighted a:link, .LeaseWizardNavigation li.Highlighted a:visited {
+			background-color: #3366cc;
+			color: White;
+		}
+
+.AboutUsProfile {
+	background: #FFFFFF url(//ezlf-plinersolutionsi.netdna-ssl.com/images/help/about-us/bg_gradient.gif) repeat-x scroll center bottom;
+	padding: 13px 20px;
+	min-height: 140px;
+}
+
+.AboutUsProfileImage {
+	float: left;
+	margin-right: 30px;
+	width: 120px;
+	height: 160px;
+}
+
+.LeaseTip {
+	font-family: "Segoe UI", "Helvetica", Tahoma, Arial, sans-serif;
+	font-size: 12px;
+	color: #4F4F4F;
+	background-color: #F7F7F7;
+	border: 1px solid #ccc;
+	padding: 7px;
+}
+
+	.LeaseTip a {
+		color: #3366cc;
+		cursor: pointer;
+	}
+
+	.LeaseTip h2 {
+		font-family: "Segoe UI", "Helvetica", Tahoma, Arial, sans-serif;
+		line-height: inherit;
+		margin: -7px;
+		margin-bottom: 5px;
+		padding: 7px;
+		font-size: 13px;
+		color: White;
+		font-weight: bold;
+		background-color: #3366cc;
+		/*text-transform:uppercase;*/
+	}
+
+.SidebarSignupHeader {
+	font-family: "Segoe UI", "Helvetica", Tahoma, Arial, sans-serif;
+	width: 186px;
+	padding: 7px;
+	font-size: 13px;
+	font-weight: bold;
+	color: white;
+	background-color: #3366cc;
+	margin-top: 10px;
+}
+
+input[type="text"].MoneyBox, input[type="text"].MoneyBox_Disabled {
+	background: #fff url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAkFJREFUeNpi/P//PwMucPrZGTFGBsYfJlLGn3AqAhmAjn/9/cVw6ulpYf/lQdt8lvm333l3lxObOhBmRHfBjz8/mEp2lZdvurk5W4BDQPrv/78MbExs173VPCfU2FXN4mDhQFGPYUDd/sbcBRcWTuJm5f7Iysz6Fyj0/e+/v9Iff35kiNaNDO10bV+DrJ4FmXPz7S2mzTc3x4NsCdEOTr719lYm0I7DjAwM//be2xcPVGIAxLgNePf9Hcv7Hx+42JjZGMS4RD+9+fqG4cffH8ytTk2NDz88mmQoafARPQyZkDk6Ytq/DCT0r4LYK66snHj+xQXdDz8+cP/595fBUtbiI7r/sYbBpptb9LO25uzhYuUSAWkABuInYCCeBAbiJGAgbkE3hLmhoQFFQF5A7qWasOqOp5+fCb75/laBmZGZ98+/P8onn56K/PLr6xNHRYfzeF0AA0BNDKGrI44///ziPTMjE+eHnx8d2JhYL68IXWaqLqz2E2sYfP71mQOYgKzKd1d6P//8nFGYU5hJT1z3IDDqUn///f3/06/P4h9/fBTCGQtXXl3lDVoRupmZiVlIiFPIG+j8L6D0BpTigyr5ArIHpxeALmCIWhs379rra4kSPBKPmRiZQCF29d//f0IvvrzQ0xLV6lwWvKiCl40XdxgcenhYJmdb/qpPPz9b8rBxQ6z99ZWBj5135RSvicl28rZfCWam22/vcFftrQ0znWXxFogPr7u+wRoohlUtA65cBsLRa+NWAXE+PjUAAQYAtCFn0X+tLwEAAAAASUVORK5CYII=') /*//ezlf-plinersolutionsi.netdna-ssl.com/images/layout2013/moneyIcons/icon-money-dollar-green.png*/ no-repeat center left;
+	background-size:16px 16px;
+	padding-left: 18px;
+	color: #000000;
+}
+
+input[type="text"].MoneyBox[disabled], input[type="text"].MoneyBox_Disabled {
+	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAg9JREFUeNqEU01rGlEUnRm/Zkzaxaj1o+JOpEJoXWTRoqi4Eruzuy5CCVmE/IB+7Lrpus2mTaCQbSZ1UVpxowutQ8hSii0qKgiKICqjE1FRp+dBA6k40wePee/de88999w7tKIolNrqdDr3aJqeOp3OkZoPs+lxtVqRYEuxWDwrFAqvh8MhpwZArzNYLBZMNpt9WalUjliWvU/sDMP89nq970Oh0Kler9dmIIriEYLfGQyGbVwHKKG9XC4flEqlk3w+/2zd/x+4fr/PIHiPZPH7/fuDweAQzz/AYtVsNvdwfoT9RRVgOp3qsc06nY4ym82jyWRCIbsuEom8lSTp2OFwSJoi2my2OZzK5Fwulz90u90dAG4RHdxut7Re/0YRa7Xaw3Q6nYUGVhIA+wgiXkHEY4j4fR1kUxeoer2+A9HeQIOnEHGbtHU2mymBQOAgHA5/1gS4PQupVOpyPB4PAcIBIAImP5PJ5K7FYplt1GA+n7PtdvtJLpdLyLJMcxzH2O32fCwWO4CYCux2APGqXej1encEQfiGjDyGKIGvjGdC8e5fF3IfqwKgCz2Xy/UVQC+q1eonUGYJSzB6jlJp2C+sVqusqUGr1XJnMhkBVB8bjcab0iiTyXQej8f3PR7P9X9FhPpb6EKi0Wh8xPVXMBh8hewiz/OU5ijfLDheR6NRAdNHZl/0+Xyi2t/4R4ABAABQAtYY31wTAAAAAElFTkSuQmCC') /*//ezlf-plinersolutionsi.netdna-ssl.com/images/layout2013/moneyIcons/icon-money-dollar-gray.png*/;
+	color: #ABABAB;
+}
+
+input[type="text"].MoneyBoxEU, input[type="text"].MoneyBox_DisabledEU {
+	background: #fff url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAjdJREFUeNpi/P//PwMlgBGfAXff32N79/2dOjMjs8Df/38/CnMK3VcSVPpM0IDff38zNBxsDtt2a3vF51+fDX8B+cyMTAzcbNw7V4cu99cU1fwJU8uCrvnHnx8MJbvKczbf3DKJh52HESj00krW4vrNt7ckxLjF3kvxSv1E0QByATJef32Dmmyf4hfdaYb/jWaarV93fYPUn39/GG69vc114/VNUXT1GAYkbkhpU52k+V9lksbL3Xf3YGhAx/AwuP76Ol/d/saMF19fZn388VEeGGgv1IXVZnOwcLCCwgrotb+tTk1Tgf5/huwDeBgwMTEz//j7w/rdt3fSzEzMDKJcop9FuERs//3/B5YHxsQvoBp2nNH49fc31q23tjnW7W9YAuSKGkoazqi1q1oMUwg06J+ioOIlblaub1gNOP7khJjvsoD9wFDWBNrGCPTCP6BX3gM1MkMs+Ppza/QmJ0sZi2tYDQDGN/P11zdEeo/3b7j04rIFUOh8o2O9u5KgIhNIHcgrmqIab3nZeH9jDQOgxF8zadOX3KzcO4G2WwDDWFWIU1DKRMr4Ir6kzNzQ0ICaLhj+P9x8a2sc0ED+fQ8O2EnySN4Cuu7nkUfHVLfc2qpvI2d9B29ShqbEcGBKnMfOws7FyABKjAzvfv39JQSMnSebI9erICdlJnQnAeOdod+9Z+UEzz47LVHNJX/+/7kGxD9EuUXPA704DxQhROdGUKa68PIiJ5DJJcQp9FZZUAlDDUCAAQBwDUKI/mUU/QAAAABJRU5ErkJggg==') /*//ezlf-plinersolutionsi.netdna-ssl.com/images/layout2013/moneyIcons/icon-money-euro-green.png*/ no-repeat center left;
+	background-size:16px 16px;
+	padding-left: 18px;
+	color: #000000;
+}
+
+input[type="text"].MoneyBoxEU[disabled], input[type="text"].MoneyBox_DisabledEU {
+	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAghJREFUeNqkU0trGmEUnXEcHzNYMr5So1CExpBl202xKpqFXWYjqbjqKoQ2kCzzA/ILCoVCIJsE3ArdWBCqSxdtsQuDusgmBsfXGMTRcZyxZ4qCxEcbMvAxM/c737n3nns+cjweE495yFUEgiAY+v3+lk6nW1NV9c5sNl9zHNf9JwHARC6X26tUKifD4fCFoigESAiapr/FYrFdu90uTbH6+4dHoxGRyWQOS6XSJ6PRSCLEezyeq3a7/ZRlWcFisUgrK8BBXzqd/mkymViKolLBYPCjz+e7RTsMsKzNZmvM4ucqKJfL7/V6PYtK6tFodN/r9f49YLVaRbzEpSI2m80n2Wz2oNfrfRgMBs8QryHbGchoDQdCJRKJfEb/twsrIEmSAuiNKIpuTTCGYbpYwWkC7A+xjEsrkGWZhuoRVHGJX4fL5foSCAQupkDgVIzwNyYhLiSoVqvOZDL5HSpvI5MWVyVJEjBSapJASiQSO263u7iQAPOmGo2GPZ/Pp2q12muEfoXD4bfIqtNwmjccDkfLYDDICzXAhgJ2XjMLSDWCTThvA60UHmRl+MALH/yADzj4oBgKhY7Q1hV8sN7pdJx+vz+9kmDixHcgOscImUm4jRaskOYmHo8/n7Xy0ruAibwqFArH9Xr9JUJraIeHHl9R0SkI5P+6jdol4nnejE8GBC0QzGH+CDAAuncJ5Bas3CQAAAAASUVORK5CYII=') /*//ezlf-plinersolutionsi.netdna-ssl.com/images/layout2013/moneyIcons/icon-money-euro-gray.png*/;
+	color: #ABABAB;
+}
+
+input[type="text"].MoneyBoxUK, input[type="text"].MoneyBox_DisabledUK {
+	background: #fff url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAcpJREFUeNpi/P//PwMlgAWXxO9/vxkuvLgot/POLpN77++zB2oG3HJUsL/Mw8bzC1kdIzYX/Pjzg6FkV3np5ptbyliZWUV+/vnJ8PPvr28bI9dqWMpYPCbogrbDnQGbbm7u4mXnZeBm5T6mJ6776NbbW/+FOIWeE/TC51+fGS69vJTCwcLBwMXKdaDbrdPFXt727+tvbxhEuUQwLGNCF7jy6iob0O/yILaRhOEukGYQG5tmrAaYSZv+Mpc2ew8Kh/8M/1kJxQJKIN58e0ui7VBH4sOPj5Jef32tIsQldEFdWG0NMBCZauyrZgPZL/AacPzJCV3vpX5nJHklWdmY2Rj//vvL8PHHR1C4/N4avckYGAOX8RoAVMh+/fUNpd7j/cGXXl5uBhpwr9auKkxdRP27pqjGXV423p94YwGkABgG14HR9fjrr68MhpKGT8N1ws4CXYMzDDAC8fff3wxA/3uA2EAnL8KnGcMF0BQYCnR+EDcb920lQcXHZ56ddQDJ/fv/j4Gfg/85MCBv4gwDoGavBRcWbhXmFIYbCNIIAl9/f2VwVnJeuzp0eQhOFwhxCrJ4qngcZmdh/4vuVFB+0JPQPYU3FsgBAAEGALB30rn9NaUXAAAAAElFTkSuQmCC') /*//ezlf-plinersolutionsi.netdna-ssl.com/images/layout2013/moneyIcons/icon-money-pound-green.png*/ no-repeat center left;
+	background-size:16px 16px;
+	padding-left: 18px;
+	color: #000000;
+}
+
+input[type="text"].MoneyBoxUK[disabled], input[type="text"].MoneyBox_DisabledUK {
+	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAa9JREFUeNpi/P//PwMlgBGXAf/+/WN48eKF3N27d03ev3/PrqmpeUteXv4yGxvbL4IG/Pnzh2HPnj2lN2/eLGNmZhYB8f/+/fstIiJCQ1pa+jGyWhZsth89ejQAqLmLnZ2dgZWV9Zi4uPijt2/f/ufg4HiOrhbDgF+/fjG8fPkyhYWFBaT5gKurq4ucnNzfb9++MXBxcWFYxoQu8Pr1azag3+VBbAkJiV0gzSA2Ns1YDZCSkvoF9Od7kL+BgJWkWAD6U+LIkSOJHz9+TPr69asK0NYLwsLCa4CGMdna2s4Gsl/gDYMfP36I3rp1q4GXl5cVFAZAvsG9e/cMfv78+dvU1HQDUMkLvC4ABiA7MAyUTp48GQwMyGZgWrhnZ2cXJiQk9F1UVPQuMA38xOsCkAKg/69zcnI+BsWGpKTkUy0trbPAtIAzDJiwpUCg/z1AbBkZmUX4NGO4AJoCQ4HODwK65raAgMDj58+fO8AMBiUkYEDexBkGQM1eFy5c2Ar0ApgPTL5gjSDw+/dvBiUlpbXBwcEhOF0A1MiioqJyGBgDf7HlD2CSPkV0biQWAAQYALgGz2wgdLEnAAAAAElFTkSuQmCC') /*//ezlf-plinersolutionsi.netdna-ssl.com/images/layout2013/moneyIcons/icon-money-pound-gray.png*/;
+	color: #ABABAB;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5) {
+	input[type="text"].MoneyBox, input[type="text"].MoneyBox_Disabled {
+		background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAb9JREFUeNrEV4FtgzAQDFEXYAWyQKUwQjoCHSF0gzAC3qBkhDJCGQFLnYAVGIG8pUP6WgZsbCdIFmBsfP++v38n0zQdXnm97Z34/p3f8Cj/vvpu73+OHuBrtLOPBxKXLSCrM7oVWLRA90CthSfaaADg8npjmAJTuQCxAkCLN3S7OhhWEoh7EAC0uFq40bpHaqnhmX/PCcQQgoQ37V1SO7F3oSzWxqSGee4AQLrM4N6Rd8DdussvIXRAX1wtJhfGCpBQYlwXRYiUV0x7iz4RWogGC054XasAYJUO4kpe+HkKALa3+lVwsqlQpZZGk2L6+a8Fq0dIsrCJf9dk9Elti9Up1LKHeEVJRleQMLMBbZMTkj0FCQFR2bDfiiACcIpSD2hipBSwAgf+iRiARitIuKUCPDm4yvHRwe0ZcsOSV7pZhoPVhLRgDWbPMd4uWMpDMagQ6bm+WPOCoT70rgdMsd+slGypxXznisikgpJZ28FSXXzuxIsyRDoWBgDnDaYPCE1/KQa7S5ewhAqOQQCwkutjY09HWJ2vVE3+Ugx1u7AzQof9bveoWLL3cEpA5okVlPDpZ8PXno4Zy6UPgIcAAwCSvbxB45EvgQAAAABJRU5ErkJggg==') /*//ezlf-plinersolutionsi.netdna-ssl.com/images/layout2013/moneyIcons/icon-money-dollar-green@2x.png*/;
+	}
+
+	input[type="text"].MoneyBox[disabled], input[type="text"].MoneyBox_Disabled {
+		background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAbpJREFUeNrEV4GRgyAQjJlvwBZMCUkJ+RL8ErCEWIKUoCW8JbwlhBZswRL8Y2aduTCoIJA4w6gIsnfs7R3ZPM+nT15fRyd2XffAoxJCDEf/cw4A36BdQzyQ+WwBWV3QrcSiJbpHaj080ScDAJc3O8M0mNoHiBMAWrylm/AwrCIQXRQAtLheuDW6J2q55Zl/vxGIMQYJH8a7onZh71JbbIzJLfP8AYB0hcW9E++Au02X32PogLm4XkytjJUgocK4IYkQaa/Y9hZ9MrYQjQ6cCLo2AcAqE4QgL/y+BQDbW/MqOdl0qFLLk0kx/fzPgdUTJFm6xL9vMvqhtsfqHGr5hHglSUYCJCxcQLvkhOxIQUJAdDZ87kUQAbgkqQcMMdIKWIMDLyIGoMkKEm6pBE9OvnJ89nB7gdyw5pVhkeFoNSEt2IDZS4z3K5byUIwqRGauL7e8YKkPg+sBW+y3GyVb7jDfuyKyqaBi1g6w1BSfjnhRxUjH0gLgusP0EaEZLsVgd+UTllDBKQoAVnJ97+zpBKtvG1VTuBRD3e7sjDBgv/sjKpYdPZwSkGViDSV8+9nws6djxnIVAuBfgAEAF7O6nW0q3tcAAAAASUVORK5CYII=') /*//ezlf-plinersolutionsi.netdna-ssl.com/images/layout2013/moneyIcons/icon-money-dollar-gray@2x.png*/;
+	}
+
+	input[type="text"].MoneyBoxEU, input[type="text"].MoneyBox_DisabledEU {
+		background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAW5JREFUeNrkV4uNwjAMbRELlBGYAKkdgY7AjQC3QRkBNrjrCh2BjnCRWICukBF6L5IrnSrnRw3VgSUrUMDvJX52TNr3fTKnLZKZbXYCy3t/uPkqtliM57QO1sI7s14/fxpfnDRWAwA2gKcRqM0+fCQWkeB7LJdA8OE0ZFJA4N8RfBV2r0UIAHxNxz42A3CGNwDrRtrQIbGDNICg3LEreBmyy0kEaPc35qMC4OoZfaBintUS4KEEOMU3Uo2ITQEJKae3nPiOnrgaJ1RP6YS5BThxkBrXfy2VgoeaswqQiorZ7RHHe36Z29Amwiogz04N4JTKfz0PKCo10wX395ShZCvmvrCaegfEpIBrubtnVkE7NwGuo22pUh5PgAYNjsTJRgLPM/hORIRDQJoJMoviFaUq+zslg3wqNhXTNHyxkLCZd2gJbkQUqLRUReK4VeU6oSEBL/Dy4CGiSTetWAoc8+LgGZHSMeNa+vb/jn8FGADL25ego8+e2gAAAABJRU5ErkJggg==') /*//ezlf-plinersolutionsi.netdna-ssl.com/images/layout2013/moneyIcons/icon-money-euro-green@2x.png*/;
+	}
+
+	input[type="text"].MoneyBoxEU[disabled], input[type="text"].MoneyBox_DisabledEU {
+		background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAWlJREFUeNrkV4uNwjAMbdEt0BuBFdoR6AgwQhihjEBHuKzQEegKGQFWyAi9F8mVTpXzo4bq7ixZ4VP8XuJnx5TTNBVb2q7Y2DYn8PHsD7XWByzOa1pnG+EPtyqlhlicMlcDAHaA1wWoz04xErtMcIXllgg+n4ZMCgj8K4Ovwe6tCAGA7+nYl+YAevgAsMdCGzYldpIGEJQ7dgNvU3a5igDt/s581QDcvKMPdBwvCfBUApziB6lGxKaAhFTTW058l0hcixPSazph7QEuAqSW9a+lUvBSC1YBUtExu73gePs/cxv6RNgl5DmoAZxS+6vnAUOl5rqgeqYMJVsx98Dn2jsgJwVcyz2+swrGrQlwHe1AlfJ6AjRocCSuPhL4vIIfRUQ4B6SZoPIo3lCqqp9TMsiXYlMxTcM3DwmfRYeW5EZEgVpPVRSBW1WuEzoS8AYvzxEilnQziqUgMC/OXhEpmzOulf/+3/G3AAMAS9SYcu/Zob4AAAAASUVORK5CYII=') /*//ezlf-plinersolutionsi.netdna-ssl.com/images/layout2013/moneyIcons/icon-money-euro-gray@2x.png*/;
+	}
+
+	input[type="text"].MoneyBoxUK, input[type="text"].MoneyBox_DisabledUK {
+		background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAATlJREFUeNrkV4ENgyAQ1KYLsIJdoAmOoCPYEZpu4ArtBo0jtCOUETTpBI5QR9CneRNC0Aq+JcZPCIEIdz7HAWHbtoHP2AWeYz93guM95lAxbFbvS9nYjA9dlgBAI6hyKJkC3kcNpQAit0UyAOAS+DrySYSFXgMTwPuoyDWAaR8CF1j3ehBLiDAfAD6pwgOiCbRrchHCxB9NcBL0YKt6Jw0AODOo/TkX3EaE3NBXUxiRdyecRABSLbwSGIiEgsDoLgDxnRXx5ZoQv5arDWkgWwXlYZSN/KnJmISB1LqPY9XTmWE7VmhI1meAixPKpXhp3encHbIOH1jSH2wIcNczn4pAprULCgKTRGgQoLx8xn/JAN6EHpoDplQi/GXFHMEjh7kFZCl1NiIEL31uQ7aJp1m4+cepdwKdAAMARH5o4N3Y2FIAAAAASUVORK5CYII=') /*//ezlf-plinersolutionsi.netdna-ssl.com/images/layout2013/moneyIcons/icon-money-pound-green@2x.png*/;
+	}
+
+	input[type="text"].MoneyBoxUK[disabled], input[type="text"].MoneyBox_DisabledUK {
+		background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAATFJREFUeNrkV4ENgyAQ1KYLsIIdgY6gI9gRXMEV2hUYoR2hjFBXcIQ6gn2aNyEEqeBTYvyEEAhy53MckI/jmKWMQ5Y4jmsnEEJwqBg2u6ZpBp/v85AlANACqhZKrYFP0ashQOQWJQMAroCvjiEFFnoNLACfoiPXAKZ9DlxiPelBxhBhOwN80YUHREto9+QihInfhuAU6MlX9UEaAHBmUftjLbiPCLmlr6cwouROuIgApFomJTATJQUB5y4A8TWa+FpDiF/LNT4ZIFuC8jCqHX9qMyZpIbXt41j3dGbZjh0akvcZEOKEaimeRne1dodswwdi+oMPAR565lMRqE1ZRDcihwDV5fP8lwzgTehuOGBFJcJfVswRvAiYW0KWqmAjQvBXym3IdvE0y3f/OE1O4CPAALw6aoSRii8XAAAAAElFTkSuQmCC') /*//ezlf-plinersolutionsi.netdna-ssl.com/images/layout2013/moneyIcons/icon-money-pound-gray@2x.png*/;
+	}
+}
+
+.InfoColumnSubmenu {
+	display: block;
+	margin: 0 0 9px 0;
+	padding: 0;
+	border: 1px solid #ccc;
+	border-bottom-width: 0;
+	font-family: "Segoe UI", "Helvetica", Tahoma, Arial, sans-serif;
+}
+
+	.InfoColumnSubmenu li {
+		display: block;
+		margin: 0;
+		list-style-type: none;
+		border-bottom: 1px solid #ccc;
+		background-color: white;
+	}
+
+		.InfoColumnSubmenu li a, .InfoColumnSubmenu li a:link, .InfoColumnSubmenu li a:visited {
+			display: block;
+			font-family: "Segoe UI", "Helvetica", Tahoma, Arial, sans-serif;
+			font-size: 11px;
+			color: #666666;
+			/*font-weight: lighter;*/
+			text-transform: uppercase;
+			text-decoration: none;
+			padding: 6px 5px 6px 10px;
+			cursor: pointer;
+		}
+
+			.InfoColumnSubmenu li a:hover, .InfoColumnSubmenu li a:active {
+				background-color: #039;
+				color: White;
+			}
+
+		/*.InfoColumnSubmenu li.Highlighted a, .InfoColumnSubmenu li.Highlighted a.HasClosedPulldownMenu, .InfoColumnSubmenu li.Highlighted a.HasOpenPulldownMenu {
+			background-color: #3366cc;
+			color: White;
+		}
+
+		.InfoColumnSubmenu li a.HasClosedPulldownMenu {
+			background: transparent url(//ezlf-plinersolutionsi.netdna-ssl.com/images/layout2009/leftnav/arrow_right.png) no-repeat scroll 180px center;
+		}
+
+			.InfoColumnSubmenu li a.HasClosedPulldownMenu:hover, .InfoColumnSubmenu li a.HasClosedPulldownMenu:active {
+				background-color: #039;
+			}
+
+		.InfoColumnSubmenu li a.HasOpenPulldownMenu {
+			background: transparent url(//ezlf-plinersolutionsi.netdna-ssl.com/images/layout2009/leftnav/arrow_down.png) no-repeat scroll 180px center;
+		}
+
+			.InfoColumnSubmenu li a.HasOpenPulldownMenu:hover {
+				background-color: #039;
+			}*/
+
+		.InfoColumnSubmenu li ul {
+			background: #FFFFFF none no-repeat scroll left top;
+			border-top: 1px solid #ccc;
+			padding: 7px 5px 7px 25px;
+			margin: 0;
+			display: none;
+		}
+
+			.InfoColumnSubmenu li ul li {
+				border-width: 0;
+				background: #FFFFFF none no-repeat scroll left top;
+			}
+
+				.InfoColumnSubmenu li ul li a, .InfoColumnSubmenu li ul li a:link, .InfoColumnSubmenu li ul li a:visited, .InfoColumnSubmenu li.Highlighted ul li a, .InfoColumnSubmenu li.Highlighted ul li a:link, .InfoColumnSubmenu li.Highlighted ul li a:visited {
+					font-family: "Segoe UI", "Helvetica", Tahoma, Arial, sans-serif;
+					font-size: 11px;
+					padding: 1px 0;
+					color: #3366CC;
+					text-transform: none;
+					background-color: transparent;
+				}
+
+					.InfoColumnSubmenu li ul li a:hover, .InfoColumnSubmenu li ul li a:active, .InfoColumnSubmenu li.Highlighted ul li a:hover, .InfoColumnSubmenu li.Highlighted ul li a:active {
+						background-color: transparent;
+						text-decoration: underline;
+					}
+
+.InfoColumnContainer {
+	font-family: "Segoe UI", "Helvetica", Tahoma, Arial, sans-serif;
+	font-size: 12px;
+	color: #4F4F4F;
+	background-color: #F7F7F7;
+	border: 1px solid #ccc;
+	padding: 7px;
+	margin: 0 0 9px 0;
+}
+
+	.InfoColumnContainer h2 {
+		font-family: inherit;
+		line-height: inherit;
+		margin: -7px;
+		margin-bottom: 10px;
+		padding: 7px;
+		font-size: 13px;
+		color: White;
+		font-weight: bold;
+		background-color: #3366cc;
+	}
+
+		.InfoColumnContainer h2 a, .InfoColumnContainer h2 a:link, .InfoColumnContainer h2 a:hover, .InfoColumnContainer h2 a:active, .InfoColumnContainer h2 a:visited {
+			color: White;
+		}
+
+	.InfoColumnContainer h3 {
+		border-bottom: 1px solid #ccc;
+	}
+
+		.InfoColumnContainer h3, .InfoColumnContainer h3 a, .InfoColumnContainer h3 a:link, .InfoColumnContainer h3 a:hover, .InfoColumnContainer h3 a:active, .InfoColumnContainer h3 a:visited {
+			font-family: inherit;
+			font-weight: bold;
+			color: #3366cc;
+			font-size: 12px;
+			padding-top: 3px;
+			padding-bottom: 2px;
+			text-transform: uppercase;
+		}
+
+.Button, a.Button:link, a.Button:visited, input[type="button"].Button, input[type="submit"].Button, a.Button,
+.BlueButton, a.BlueButton:link a.BlueButton:visited, input[type="button"].BlueButton, input[type="submit"].BlueButton, button.BlueButton,
+.GrayButton, a.GrayButton:link a.GrayButton:visited, input[type="button"].GrayButton, input[type="submit"].GrayButton, button.GrayButton,
+.YellowButton, a.YellowButton:link a.YellowButton:visited, input[type="button"].YellowButton, input[type="submit"].YellowButton, button.YellowButton {
+	/*First 2 properties added to make buttons look the same in iOS*/
+	-webkit-appearance: none;
+	border-radius: 0px;
+	/*text-transform:uppercase;*/
+	border: 1px solid #ccc;
+	background-color: #3366cc;
+	color: White !important;
+	text-decoration: none !important;
+	font-family: "Segoe UI", "Helvetica", Tahoma, Arial, sans-serif;
+	font-size: 12px;
+	line-height: 12px;
+	padding: 6px 20px;
+	cursor: pointer;
+	-webkit-transition: background .2s, color .2s;
+	-moz-transition: background .2s, color .2s;
+	-o-transition: background .2s, color .2s;
+	transition: background .2s, color .2s;
+}
+
+	.Button[disabled], input[type="button"].Button[disabled], input[type="submit"].Button[disabled], a.Button[disabled], .Button.Disabled {
+		background-color: #ccc;
+		cursor: default !important;
+		color: #999 !important;
+	}
+
+		.Button[disabled]:hover, .Button[disabled]:active, input[type="button"].Button[disabled]:hover, input[type="button"].Button[disabled]:active, input[type="submit"].Button[disabled]:hover, a.Button[disabled]:hover, a.Button[disabled]:active, .Button.Disabled:hover {
+			background-color: #ccc !important;
+			cursor: default !important;
+			color: #999;
+			-webkit-box-shadow: none;
+			box-shadow: none;
+		}
+
+	.Button:hover, input[type="button"].Button:hover, input[type="submit"].Button:hover, a.Button:hover, a.Button:active, input[type="button"].Button:active, input[type="submit"].Button:active {
+		background-color: #039;
+		text-decoration: none !important;
+	}
+
+	.Button.Red, a.Button.Red:link a.Button.Red:visited, input[type="button"].Button.Red, input[type="submit"].Button.Red, button.Button.Red {
+		background-color: #f50000 !important;
+	}
+
+		.Button.Red:hover, input[type="button"].Button.Red:hover, input[type="submit"].Button.Red:hover, a.Button.Red:hover, a.Button.Red:active, input[type="button"].Button.Red:active, input[type="submit"].Button.Red:active {
+			background-color: #c90000 !important;
+			text-decoration: none !important;
+		}
+
+	.Button.Gray, a.Button.Gray:link a.Button.Gray:visited, input[type="button"].Button.Gray, input[type="submit"].Button.Gray, button.Button.Gray {
+		background-color: #999999 !important;
+	}
+
+		.Button.Gray:hover, input[type="button"].Button.Gray:hover, input[type="submit"].Button.Gray:hover, a.Button.Gray:hover, a.Button.Gray:active, input[type="button"].Button.Gray:active, input[type="submit"].Button.Gray:active {
+			background-color: #666666 !important;
+			text-decoration: none !important;
+		}
+
+.BlueButton, a.BlueButton:link, input[type="button"].BlueButton, input[type="submit"].BlueButton, button.BlueButton {
+	background-image: url(//ezlf-plinersolutionsi.netdna-ssl.com/images/buttons/btn-bg-blue-off.png);
+	background-color: #24458C;
+	background-repeat: repeat-x;
+	min-height: 25px;
+	font-size: 13px;
+	font-weight: bolder;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	border: 1px solid #039;
+	padding: 4px 15px;
+	-webkit-transition: background 0s;
+	-moz-transition: background 0s;
+	-o-transition: background 0s;
+	transition: background 0s;
+}
+
+	.BlueButton:hover, input[type="button"].BlueButton:hover, input[type="submit"].BlueButton:hover, a.BlueButton:hover,
+	a.BlueButton:active, input[type="button"].BlueButton:active, input[type="submit"].BlueButton:active, button.BlueButton:hover, button.BlueButton:active {
+		background-image: url(//ezlf-plinersolutionsi.netdna-ssl.com/images/buttons/btn-bg-blue-on.png);
+		background-color: #3260C2 !important;
+	}
+
+.GrayButton, a.GrayButton:link, input[type="button"].GrayButton, input[type="submit"].GrayButton, button.GrayButton {
+	background-image: url(//ezlf-plinersolutionsi.netdna-ssl.com/images/buttons/btn-bg-gray-off.gif);
+	background-color: #707070;
+	background-repeat: repeat-x;
+	min-height: 25px;
+	font-size: 13px;
+	font-weight: bolder;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	border: 1px solid #707070;
+	padding: 4px 15px;
+	-webkit-transition: background 0s;
+	-moz-transition: background 0s;
+	-o-transition: background 0s;
+	transition: background 0s;
+}
+
+	.GrayButton:hover, input[type="button"].GrayButton:hover, input[type="submit"].GrayButton:hover, a.GrayButton:hover,
+	a.GrayButton:active, input[type="button"].GrayButton:active, input[type="submit"].GrayButton:active, button.GrayButton:hover, button.GrayButton:active {
+		background-image: url(//ezlf-plinersolutionsi.netdna-ssl.com/images/buttons/btn-bg-gray-on.gif);
+		background-color: #5D5D5D !important;
+	}
+
+.YellowButton, a.YellowButton:link, input[type="button"].YellowButton, input[type="submit"].YellowButton, button.YellowButton {
+	background-image: url(//ezlf-plinersolutionsi.netdna-ssl.com/images/buttons/btn-bg-gold-off.png);
+	background-repeat: repeat-x;
+	min-height: 25px;
+	font-size: 13px;
+	font-weight: bolder;
+	background-color: #e6b848;
+	color: #039 !important;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	border: 1px solid #e6b848;
+	padding: 4px 15px;
+	-webkit-text-shadow: 1px 1px 3px White;
+	text-shadow: 1px 1px 3px White;
+	-webkit-transition: background 0s;
+	-moz-transition: background 0s;
+	-o-transition: background 0s;
+	transition: background 0s;
+}
+
+	.YellowButton:hover, input[type="button"].YellowButton:hover, input[type="submit"].YellowButton:hover, a.YellowButton:hover,
+	a.YellowButton:active, input[type="button"].YellowButton:active, input[type="submit"].YellowButton:active, button.YellowButton:hover, button.YellowButton:active {
+		background-image: url(//ezlf-plinersolutionsi.netdna-ssl.com/images/buttons/btn-bg-gold-on.png);
+		background-color: #F7CA4C !important;
+	}
+
+
+.ArrowBullet, .CheckBullet li ul, .ArticleText ul {
+	margin: 0;
+	padding: 0;
+}
+
+	.ArrowBullet li, .CheckBullet li ul li, .ArticleText ul li { /* CheckBullet is used from state assist, but Kevin sometimes puts hanging li tags inside of these that should use arrow bullets */
+		margin: 0;
+		padding: 0 0 4px 13px;
+		list-style-type: none;
+		background: transparent url(//ezlf-plinersolutionsi.netdna-ssl.com/images/layout2009/leftnav/arrow_right_small.png) no-repeat scroll left 3px;
+	}
+
+	li.ArrowBulletGreen{
+		margin: 0;
+		padding: 0 0 4px 13px;
+		list-style-type: none;
+		background: transparent url(//ezlf-plinersolutionsi.netdna-ssl.com/images/layout2009/leftnav/arrow_right_small-green.png) no-repeat scroll left 3px;
+	}
+
+.icon-RSS {
+	background: url(/images/feed.png) no-repeat left top;
+	border: none;
+	min-height: 16px;
+	min-width: 16px;
+}
+
+	.icon-RSS:hover {
+		background: url(/images/feed_over.gif) no-repeat left top;
+		border: none;
+	}
+
+.articleCategoryHeader-landlordnews, .articleCategoryHeader-statelaws,
+.articleCategoryHeader-provincelaws, .articleCategoryHeader-educational, .articleCategoryHeader-landlordguide {
+	min-height: 65px;
+	margin-bottom: 30px;
+	color: #555555;
+	font-size: 16px;
+	position: relative;
+}
+
+.articleCategoryHeader-landlordnews {
+	background: url(/images/articles/header-news-section-newsroom.png) no-repeat left 10px;
+}
+
+.articleCategoryHeader-statelaws {
+	background: url(/images/articles/header-news-section-lawsummaries.png) no-repeat left 10px;
+}
+
+.articleCategoryHeader-provincelaws {
+	background: url(/images/articles/header-news-section-provincesummaries.png) no-repeat left 10px;
+}
+
+.articleCategoryHeader-educational {
+	background: url(/images/articles/header-news-section-university.png) no-repeat left 10px;
+}
+
+.articleCategoryHeader-landlordguide {
+	background: url(/images/articles/header-news-section-university.png) no-repeat left 10px;
+}
+
+.articlesearchheading {
+	color: #3366CC;
+	margin: 10px 0 15px 0;
+}
+
+.articletitlelarge, .articletitlemedium, .articletitletitleonly {
+	margin: 0;
+}
+
+.articletitlelarge {
+	line-height: 22px;
+	font-size: 22px;
+}
+
+.articletitlemedium {
+	line-height: 18px;
+	font-size: 18px;
+}
+
+.articletitlesmall {
+	background: transparent url(//ezlf-plinersolutionsi.netdna-ssl.com/images/layout2009/leftnav/arrow_right_small.png) no-repeat scroll left 4px;
+	line-height: 14px;
+	font-size: 14px;
+	padding-left: 15px;
+	display: block;
+	margin-bottom: 5px;
+}
+
+.articlebody, .articlepreview {
+	font-size: 13px;
+	line-height: 21px;
+	/*text-align: justify;*/
+}
+
+	.articlebody p {
+		margin: 10px 0;
+	}
+
+	.articlepreview p {
+		margin: 0px;
+	}
+
+	.articlebody ol, .articlebody ul, .articlepreview ol, .articlepreview ul {
+		overflow: hidden;
+	}
+
+	.articlebody img, .articlepreview img {
+		margin: 10px 15px 5px 15px;
+		border-radius: 3px;
+	}
+
+figure {
+	margin: 10px 15px 5px 15px;
+	border-radius: 3px;
+}
+
+.articlebody figure img {
+	margin: 0;
+	border-radius: 0;
+}
+
+figcaption {
+	margin-left: 5px;
+	font-style: italic;
+}
+
+.articlethumbnail {
+	border-radius: 3px;
+}
+
+.StateAssist, .success, .warning {
+	width: 768px;
+	padding: 5px;
+	margin-bottom: 4px;
+	border: 1px solid #aaeb51;
+	background-color: #D5F5A8;
+	position:relative;
+}
+
+.success, .warning {
+	font-weight: bold;
+	width: auto;
+}
+
+.warning {
+	background-color: #fffbb4;
+}
+
+.urgentBox {
+	padding: 5px;
+	background-color: #F1CFCF;
+	border: 1px solid #AD3333;
+	font-weight: bold;
+	color: #AD3333;
+	text-align: left;
+	margin: 4px auto;
+}
+
+.RepeatedElement {
+	/*width: 768px;*/
+	padding: 5px;
+	margin-bottom: 4px;
+	margin-right: -5px;
+	margin-left: -5px;
+	border: 1px solid #ccc;
+	background: #ebebeb url(//ezlf-plinersolutionsi.netdna-ssl.com/images/layout2009/grey_gradient.png) repeat-x top;
+}
+
+	.RepeatedElement input[readonly], .RepeatedElement select[readonly] {
+		background-color: transparent;
+		border-color: transparent;
+	}
+
+.RepeatedElementAdd, .RepeatedElementAddFirst {
+	/*color:#009900;*/
+	color: White;
+	width: 752px;
+	height: 27px;
+	font-weight: bold;
+	text-align: center;
+	margin-left: -5px;
+	font-size: 10px;
+	text-transform: uppercase;
+}
+/*
+.RepeatedElementAdd:hover
+{
+	/*color:#009900;
+	color:White;
+	text-decoration:underline;
+	/*background: transparent url(//ezlf-plinersolutionsi.netdna-ssl.com/images/layout2009/fade_box.png) no-repeat top;
+	cursor:pointer;
+}*/
+.RepeatedElementAddFirst {
+	/*background: transparent url(//ezlf-plinersolutionsi.netdna-ssl.com/images/layout2009/fade_box.png) no-repeat top;*/
+}
+
+.RepeatedElementAddButton {
+	color: White;
+	margin: 0 auto;
+	padding-top: 5px;
+	background: transparent url(//ezlf-plinersolutionsi.netdna-ssl.com/images/leasewizard/add_bg.png) no-repeat top;
+	width: 216px;
+	height: 24px;
+	cursor: pointer;
+}
+
+	.RepeatedElementAddButton:hover {
+		color: White;
+		text-decoration: underline;
+		cursor: pointer;
+	}
+
+	.RepeatedElementAddButton a, .RepeatedElementAddButton a:hover {
+		color: White;
+	}
+
+.Remove, .RemoveNoFloat {
+	color: Black;
+	font-weight: bold;
+	font-size: 10px;
+	float: right;
+}
+
+.RemoveNoFloat {
+	float: none;
+	position: absolute;
+	top: 8px;
+	right: 10px;
+}
+
+	.Remove td, .RemoveNoFloat td {
+		color: Black;
+	}
+
+	.Remove img, .RemoveNoFloat img {
+		margin-left: 4px;
+		margin-right: 0px;
+	}
+
+	.Remove:hover, .Remove table:hover, .RemoveNoFloat:hover, .RemoveNoFloat table:hover {
+		color: Black;
+		text-decoration: underline;
+	}
+
+.leaseWizardExit td {
+	color: White;
+	font-weight: bold;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+.leaseWizardExit img {
+	margin-left: 4px;
+	margin-right: 0px;
+}
+
+.leaseWizardExit table:hover {
+	color: White;
+	text-decoration: underline;
+}
+
+.leaseWizard {
+	/*font-size:12px;*/
+}
+
+	.leaseWizard a:hover {
+		color: #36C;
+	}
+
+	.leaseWizard input[type="text"], .leaseWizard select, .leaseWizard textarea {
+		font-family: "Segoe UI", "Helvetica", Tahoma, Arial, sans-serif;
+	}
+
+	.leaseWizard textarea {
+		width: 600px;
+	}
+
+	.leaseWizard #saveButton {
+		background: transparent url("//ezlf-plinersolutionsi.netdna-ssl.com/images/leasewizard/save_and_download_lease.png") no-repeat top left;
+		width: 182px;
+		height: 30px;
+		float: right;
+		margin-right: 6px;
+		margin-left: 6px;
+		cursor: pointer;
+		-webkit-border-radius: 2px;
+		-moz-border-radius: 2px;
+		border-radius: 2px;
+	}
+
+		.leaseWizard #saveButton:active, .leaseWizard #footerSave:active {
+			-webkit-box-shadow: 0 0 7px 2px rgba(0,0,0,0.3) inset;
+			box-shadow: 0 0 7px 2px rgba(0,0,0,0.3) inset;
+		}
+
+		.leaseWizard #saveButton:hover {
+			background-image: url("//ezlf-plinersolutionsi.netdna-ssl.com/images/leasewizard/save_and_download_lease_roll.png");
+		}
+
+		.leaseWizard #saveButton.new {
+			background: transparent url("//ezlf-plinersolutionsi.netdna-ssl.com/images/leasewizard/preview_lease.jpg") no-repeat top left;
+		}
+
+			.leaseWizard #saveButton.new:hover {
+				background-image: url("//ezlf-plinersolutionsi.netdna-ssl.com/images/leasewizard/preview_lease_roll.jpg");
+			}
+
+		.leaseWizard #saveButton.newtrial {
+			background: transparent url("//ezlf-plinersolutionsi.netdna-ssl.com/images/leasewizard/preview_leases.jpg") no-repeat top left;
+		}
+
+			.leaseWizard #saveButton.newtrial:hover {
+				background-image: url("//ezlf-plinersolutionsi.netdna-ssl.com/images/leasewizard/preview_leases_roll.jpg");
+			}
+
+		.leaseWizard #saveButton.trial {
+			background: transparent url("//ezlf-plinersolutionsi.netdna-ssl.com/images/leasewizard/save_and_download_leases.png") no-repeat top left;
+		}
+
+			.leaseWizard #saveButton.trial:hover {
+				background-image: url("//ezlf-plinersolutionsi.netdna-ssl.com/images/leasewizard/save_and_download_leases_roll.png");
+			}
+
+#previewButton {
+	background: transparent url("//ezlf-plinersolutionsi.netdna-ssl.com/images/leasewizard/save_and_view_lease.jpg") no-repeat top left;
+	width: 200px;
+	height: 29px;
+	cursor: pointer;
+	margin-bottom: 10px;
+}
+
+	#previewButton:hover {
+		background-image: url("//ezlf-plinersolutionsi.netdna-ssl.com/images/leasewizard/save_and_view_lease_roll.jpg");
+	}
+
+	#previewButton.trial {
+		background-image: url("//ezlf-plinersolutionsi.netdna-ssl.com/images/leasewizard/save_and_view_leases.jpg");
+	}
+
+		#previewButton.trial:hover {
+			background-image: url("//ezlf-plinersolutionsi.netdna-ssl.com/images/leasewizard/save_and_view_leases_roll.jpg");
+		}
+/*.leaseWizard h1
+{
+	font-family: Arial, Helvetica, Sans-Serif;
+	color:#039;
+	font-size:19px;
+	font-weight:bold;
+	margin-bottom:5px;
+	text-transform:uppercase;
+}*/
+.leaseWizard .subtitle {
+	color: #555;
+}
+
+.leaseWizard .footer {
+	/*width: 780px;*/
+	position:relative;
+}
+
+.leaseWizard .footerNav, .leaseWizard #footerSave, .leaseWizard .footerNavNext, .leaseWizard .footerNavPrev {
+	color: #36C;
+	font-size: 12px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.leaseWizard #footerSave {
+	width: 170px;
+	height: 27px;
+	float: right;
+	background: transparent url("//ezlf-plinersolutionsi.netdna-ssl.com/images/leasewizard/finish_and_view_lease.jpg") no-repeat center center;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+	.leaseWizard #footerSave:hover {
+		background-image: url("//ezlf-plinersolutionsi.netdna-ssl.com/images/leasewizard/finish_and_view_lease_roll.jpg");
+	}
+
+	.leaseWizard #footerSave.trial {
+		background-image: url("//ezlf-plinersolutionsi.netdna-ssl.com/images/leasewizard/finish_and_view_leases.jpg");
+	}
+
+		.leaseWizard #footerSave.trial:hover {
+			background-image: url("//ezlf-plinersolutionsi.netdna-ssl.com/images/leasewizard/finish_and_view_leases_roll.jpg");
+		}
+
+.leaseWizard .footerNav, .leaseWizard .footerNavNext, .leaseWizard .footerNavPrev {
+	/*float: right;*/
+	position:absolute;
+	right:0;
+	cursor: pointer;
+	width: 107px;
+	height: 23px;
+	-webkit-transition: margin .1s linear;
+	-moz-transition: margin .1s linear;
+	-o-transition: margin .1s linear;
+	transition: margin .1s linear;
+}
+
+.leaseWizard .footerNavNext {
+	background: transparent url("//ezlf-plinersolutionsi.netdna-ssl.com/images/leasewizard/next.png") no-repeat center center;
+	margin-left: -2px;
+	margin-right: 2px;
+}
+
+	.leaseWizard .footerNavNext:hover {
+		margin-right: 0px;
+		margin-left: 0px;
+	}
+
+.leaseWizard .footerNavPrev {
+	/*float: left;*/
+	position:absolute;
+	left:0;
+	margin-right: -2px;
+	margin-left: 2px;
+	background: transparent url("//ezlf-plinersolutionsi.netdna-ssl.com/images/leasewizard/prev.png") no-repeat center center;
+}
+
+	.leaseWizard .footerNavPrev:hover {
+		margin-left: 0;
+		margin-right: 0px;
+	}
+
+.leaseWizard .footerNav:hover, .leaseWizard #footerSave:hover, .documentList .previewLink:hover {
+	color: #36C;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.documentList table, .documentList div.documentListItem, .documentList div.documentListItemActive {
+	border: 1px solid #d2d2d2;
+	background-color: white;
+	border-bottom-width: 0;
+	padding-right: 5px;
+	padding-bottom: 2px;
+	padding-top: 2px;
+	margin-left: -5px;
+}
+
+	.documentList table:hover, .documentList div.documentListItem:hover {
+		background-color: #DFEAFE;
+	}
+
+.documentList .previewLink {
+	text-transform: uppercase;
+	float: right;
+	color: #36C;
+	font-size: 10px;
+	line-height: 16px;
+	margin-bottom: 0;
+	margin-left: 5px;
+	vertical-align: top;
+}
+/*.documentList table.alternate
+{
+	background-color:#EDEDED;
+	border: 1px solid #EDEDED;
+}*/
+.documentList table.active, .documentList div.documentListItemActive {
+	background-color: #fffbcc;
+	/*background-image:url("//ezlf-plinersolutionsi.netdna-ssl.com/images/layout2009/loggedinhome/yellow_gradient_small2.jpg");
+	background-position: top left;*/
+}
+
+.documentList table:hover, .documentList div:hover, .documentList label:hover {
+	/*border: 1px solid #d2d2d2;*/
+	cursor: pointer;
+}
+
+/*.documentList table
+{
+	border: 1px solid white;
+	padding-right:5px;
+}
+.documentList .previewLink
+{
+	float:right;
+	color:#36C;
+	font-size:10px;
+	margin-bottom:5px;
+	vertical-align:top;
+}
+.documentList table.alternate
+{
+	background-color:#EDEDED;
+	border: 1px solid #EDEDED;
+}
+.documentList table.active
+{
+	background-color:#fffde5;
+	border: 1px solid #fffde5;
+}
+
+.documentList table.alternateactive
+{
+	background-color:#FFFCDB;
+	border: 1px solid #FFFCDB;
+}
+
+.documentList table:hover
+{	
+	border: 1px solid #d2d2d2;
+	cursor:pointer;
+}*/
+
+.FlatHeader {
+	background-color: #039;
+	font-weight: bold;
+	color: #FFFFFF;
+	line-height: 22px;
+	padding: 0 5px 0 5px;
+	margin-top: 10px;
+	/*border: 1px solid #B6C0D3;*/
+}
+
+.description {
+	padding: 5px 0 10px 5px;
+	font-style: italic;
+}
+
+.searchTableRow td{
+	padding-bottom: 4px;
+	padding-top: 4px;
+	padding-left:2px;
+	cursor: pointer;
+	background-color: #FFF;
+	border: 1px solid #d2d2d2;
+	border-top-width: 0;
+	border-left-width: 0;
+	border-right-width: 0;
+}
+
+	.searchTableRow td.selectLink {
+		text-align: right;
+		text-decoration: underline;
+		color: #11147F;
+	}
+
+.searchTableRowActive {
+	padding-bottom: 2px;
+	padding-top: 2px;
+	color: White;
+	cursor: pointer;
+	background-color: #3366cc;
+	border: 1px solid #d2d2d2;
+	border-top-width: 0;
+}
+
+	.searchTableRowActive td.selectLink {
+		color: #3366cc;
+	}
+
+.searchTableRow:hover td{
+	background-color: #DFEAFE;
+}
+
+.CheckBullet {
+	margin: 0;
+	padding: 0;
+}
+
+	.CheckBullet li {
+		margin: 0 0 8px 0;
+		padding: 0 0 0 18px;
+		list-style-type: none;
+		background: transparent url(//ezlf-plinersolutionsi.netdna-ssl.com/images/layout2009/leftnav/blue_checkmark.png) no-repeat scroll left top;
+		position: relative;
+	}
+
+	.StateAssistList:after {
+		position: absolute;
+		top: 0; 
+		left: 0; 
+		height: 100%;
+		width: 100%;
+		content: "";
+		background: linear-gradient(to top, #D5F5A8 15%, 
+											rgba(255,255,255, 0) 40%);
+		pointer-events: none; /* so the text is still selectable */
+	}
+
+ul.MinimalBullet {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+	ul.MinimalBullet li {
+		margin: 0;
+		padding: 0 0 0 14px;
+		background: transparent url(//ezlf-plinersolutionsi.netdna-ssl.com/images/bullet.gif) no-repeat scroll left top;
+	}
+
+.GenericBubble {
+	font-family: "Segoe UI", "Helvetica", Tahoma, Arial, sans-serif;
+	border: 1px solid #ccc;
+	margin: 0 0 10px 0;
+	padding: 7px;
+}
+
+	.GenericBubble h2 {
+		/*border-bottom: 1px solid #CCCCCC;
+	background-color: #6588CE;
+	color: #FFFFFF;
+	font-size: 16px;
+	line-height: 28px;
+	padding: 0 10px;
+	margin: 0 0 6px 0;*/
+		font-family: inherit;
+		line-height: inherit;
+		margin: -7px;
+		margin-bottom: 5px;
+		padding: 7px;
+		padding-left: 20px;
+		background-image: url(//ezlf-plinersolutionsi.netdna-ssl.com/images/layout2009/leftnav/arrow_right.png);
+		background-position: 7px center;
+		background-repeat: no-repeat;
+		font-size: 13px;
+		color: White;
+		font-weight: bold;
+		background-color: #039;
+	}
+
+		.GenericBubble h2 a, .GenericBubble h2 a:link, .GenericBubble h2 a:hover, .GenericBubble h2 a:active, .GenericBubble h2 a:visited {
+			color: #FFFFFF;
+		}
+
+.GrayGradientTable tr {
+	background-color: white;
+	border-bottom: 1px solid #D0D0D0;
+}
+
+.GrayGradientTable td, .GrayGradientTable th {
+	padding: 2px 4px 2px 6px;
+}
+
+.GrayGradientTable th {
+	color: #3366CC;
+	font-weight: bold;
+}
+
+.ListViewHeader {
+	background: #E6E6E6 url(//ezlf-plinersolutionsi.netdna-ssl.com/images/layout2009/forms/forms_displaybox_bar.jpg) repeat-x scroll center top;
+	border: 1px solid #D0D0D0;
+	line-height: 23px;
+	font-size: 13px;
+	padding: 3px 10px;
+	color: #666666;
+}
+
+	.ListViewHeader .Extra {
+		float: right;
+		font-size: 10px;
+		line-height: 18px;
+		padding-top: 4px;
+	}
+
+.ListViewRow {
+	border: 1px solid #D0D0D0;
+	border-top-width: 0;
+	background: #FFFFFF url(//ezlf-plinersolutionsi.netdna-ssl.com/images/layout2009/forms/forms_displaybox_bg.jpg) repeat-x scroll center top;
+	padding: 15px 10px 10px 10px;
+}
+
+.GridViewHeader {
+	background: #E6E6E6 url(//ezlf-plinersolutionsi.netdna-ssl.com/images/layout2009/forms/forms_displaybox_bar.jpg) repeat-x scroll center top;
+	/*border: 1px solid #D0D0D0;*/
+	line-height: 23px;
+	font-size: 13px;
+	padding: 3px 10px !important;
+	color: #666;
+}
+
+	.GridViewHeader .Extra {
+		float: right;
+		font-size: 10px;
+		line-height: 18px;
+		padding-top: 4px;
+	}
+
+.DocTile {
+	float: left;
+	padding: 0 15px;
+	width: 159px;
+	text-align: center;
+	position: relative;
+}
+.thumbTagContainer{
+	position:absolute;
+	display:table-cell;
+	bottom:13px; 
+	right:-7px;
+}
+.thumbTag{
+	width:115px;
+	height:28px;
+	position:relative;
+}
+.freeTag {
+	width:61px;
+	height:55px;
+	position: absolute;
+	top: 0;
+	right: -1px;
+	z-index: 1;
+	cursor: pointer;
+}
+
+	.DocTile h2 {
+		font-size: 12px;
+		font-family: "Segoe UI", "Helvetica", Tahoma, Arial, sans-serif;
+		line-height: 1.3em;
+		height: 2.8em;
+		overflow: hidden;
+		margin-bottom: 10px;
+	}
+
+	.DocTile img.Thumbnail, .DocTile img.ThumbnailNoHover {
+		border: 3px solid #D5D5D5 !important;
+	}
+
+	.DocTile.Highlighted img.Thumbnail, .DocTile.Highlighted img.ThumbnailNoHover {
+		border: 3px solid #6bba78 !important;
+	}
+
+	.DocTile:hover img.Thumbnail {
+		border-color: #436CC4 !important;
+		cursor: -moz-zoom-in;
+		cursor: -webkit-zoom-in;
+	}
+
+.ie .DocTile:hover img.Thumbnail, .opera .DocTile:hover img.Thumbnail {
+	cursor: url(//ezlf-plinersolutionsi.netdna-ssl.com/images/layout2009/magnify.cur), default;
+}
+
+	.DocTile:hover img.Thumbnail.NoPreview,
+	.ie .DocTile:hover img.Thumbnail.NoPreview, 
+	.opera .DocTile:hover img.Thumbnail.NoPreview {
+		cursor: pointer;
+	}
+
+.DocTile img.Thumbnail a, .DocTile img.Thumbnail a:link, .DocTile img.Thumbnail a:visited, .DocTile img.ThumbnailNoHover a, .DocTile img.ThumbnailNoHover a:link, .DocTile img.ThumbnailNoHover a:visited {
+	text-decoration: none;
+}
+
+.ListViewRow .DocTile .Hover1, .BubbleTop {
+	position: absolute;
+	top: 0;
+	left: -260px;
+	z-index: 50;
+	width: 275px;
+	background: transparent url(//ezlf-plinersolutionsi.netdna-ssl.com/images/layout2009/forms/hover_details/lease_hover_top.png) no-repeat scroll left top;
+	text-align: left;
+}
+
+.ListViewRow .DocTile .Hover2, .BubbleBase {
+	background: transparent url(//ezlf-plinersolutionsi.netdna-ssl.com/images/layout2009/forms/hover_details/lease_hover_bottom.png) no-repeat scroll left bottom;
+	padding: 17px 0 43px 0;
+}
+
+.ListViewRow .DocTile .Hover3, .BubbleMid {
+	background: transparent url(//ezlf-plinersolutionsi.netdna-ssl.com/images/layout2009/forms/hover_details/lease_hover_body.png) repeat-y scroll left top;
+	padding: 4px 35px 0 35px;
+	margin: 0;
+}
+
+.ListViewRow .DocTile .HoverArrow, .BubbleArrow {
+	position: absolute;
+	top: 50px;
+	left: 252px;
+	background: transparent url(//ezlf-plinersolutionsi.netdna-ssl.com/images/layout2009/forms/hover_details/lease_hover_side.png) repeat-y scroll left top;
+	width: 23px;
+	height: 62px;
+	z-index: 1;
+}
+
+.ListViewRow .DocTile .Hover3 h2 {
+	font-size: 16px;
+	line-height: 20px;
+	padding: 0 0 5px 0;
+	margin: 0 0 5px 0;
+	border-bottom: 1px solid #D6D6D6;
+	height: auto;
+	overflow: visible;
+}
+
+.validatedTextBox {
+	background-color: #B0FFA8;
+	border-top: solid 1px #807FBB;
+	border-left: solid 1px #807FBB;
+	border-right: solid 1px #B2B2B7;
+	border-bottom: solid 1px #B2B2B7;
+}
+
+.invalidatedTextBox, input[type="text"].invalidatedTextBox {
+	background-color: #fce4e4;
+	outline-color: #B81818;
+}
+
+	.invalidatedTextBox, .invalidatedTextBox:hover {
+		border-top: 1px solid #B81818;
+		border-left: 1px solid #B81818;
+		border-right: 1px solid #E21E1E;
+		border-bottom: 1px solid #E21E1E;
+	}
+
+.trErrorMsg {
+	color: #FF0000;
+	font-weight: bold;
+}
+
+h2.Caps {
+	font-family: "Segoe UI", "Helvetica", Tahoma, Arial, sans-serif;
+	color: #666666;
+	font-size: 12px;
+	text-transform: uppercase;
+	margin: 0;
+	padding: 15px 0 13px 0;
+	line-height: 15px;
+	font-weight: bold;
+}
+
+.BigArrowLeft, .BigArrowLeft:link, .BigArrowLeft:hover, .BigArrowLeft:active, .BigArrowLeft:visited {
+	width: 16px;
+	height: 37px;
+	background: transparent url(//ezlf-plinersolutionsi.netdna-ssl.com/images/layout2009/forms/forms_arrows_left_off.jpg) no-repeat scroll center center;
+	text-decoration: none;
+}
+
+	.BigArrowLeft:hover, .BigArrowLeft:active {
+		background-image: url(//ezlf-plinersolutionsi.netdna-ssl.com/images/layout2009/forms/forms_arrows_left_on.jpg);
+	}
+
+.BigArrowRight, .BigArrowRight:link, .BigArrowRight:hover, .BigArrowRight:active, .BigArrowRight:visited {
+	width: 16px;
+	height: 37px;
+	background: transparent url(//ezlf-plinersolutionsi.netdna-ssl.com/images/layout2009/forms/forms_arrows_right_off.jpg) no-repeat scroll center center;
+	text-decoration: none;
+}
+
+	.BigArrowRight:hover, .BigArrowRight:active {
+		background-image: url(//ezlf-plinersolutionsi.netdna-ssl.com/images/layout2009/forms/forms_arrows_right_on.jpg);
+	}
+
+.HorizontalList {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+	.HorizontalListItem, .HorizontalListItemHighlighted, .HorizontalList li {
+		border: 1px solid #d2d2d2;
+		background-color: white;
+		border-top-width: 0;
+		padding: 6px;
+	}
+
+		.HorizontalListItem:hover, .HorizontalList li:hover {
+			background-color: #DFEAFE;
+		}
+
+.HorizontalListItemHighlighted {
+	background-color: #FFFBCC;
+	/*background: #fffbcc url("//ezlf-plinersolutionsi.netdna-ssl.com/images/layout2009/loggedinhome/yellow_gradient_small2.jpg") repeat-x top left;*/
+}
+
+.InYourFaceTooltip {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 175;
+	width: 250px;
+	text-align: left;
+}
+
+	.InYourFaceTooltip div:nth-of-type(2) {
+		line-height: 8px;
+	}
+
+	.InYourFaceTooltip .TooltipText {
+		border-width: 2px 2px 0 2px;
+		border-style: solid;
+		border-color: #4464CA;
+		background-color: #FFFFFF;
+		padding: 8px 10px 10px 10px;
+		font-weight: bold;
+		color: #10147F;
+		-webkit-box-shadow: 1px 1px 25px rgba(50, 50, 50, 0.3);
+		-moz-box-shadow: 1px 1px 25px rgba(50, 50, 50, 0.3);
+		box-shadow: 1px 1px 25px rgba(50, 50, 50, 0.3);
+	}
+
+		.InYourFaceTooltip .TooltipText h2 {
+			font-size: 16px;
+			line-height: 20px;
+			padding-bottom: 5px;
+			margin-bottom: 5px;
+			border-bottom: 1px solid #CCC;
+			height: auto;
+		}
+
+.HorizontalListItemNotification {
+	border: 1px solid #d2d2d2;
+	background-color: #AAFFAA;
+	border-top-width: 0;
+	padding: 6px;
+}
+
+.sideLoveContainer {
+	clear: both;
+	height: 100px;
+	overflow: hidden;
+	position: relative;
+}
+
+table.featurestable {
+	border-collapse: collapse;
+}
+
+.featurestable th {
+	padding: 4px;
+	background-color: #039;
+	font-weight: bold;
+	font-size: 100%;
+	vertical-align: top;
+	color: #FFFFFF;
+}
+
+	.featurestable th a {
+		text-decoration: none;
+		color: #FFFFFF;
+	}
+
+.featurestable td {
+	padding-right: 10px;
+	padding-top: 6px;
+	border-bottom: 0 solid #6B89DB;
+}
+
+
+.featurestable b, .featurestable strong {
+	color: #039;
+}
+
+.featurestable H2 {
+	width: 100%;
+	color: #039;
+	margin-top: 0;
+}
+
+.featuresheader {
+	text-align: left;
+}
+
+	.featuresheader h2 {
+		background-image: url(//ezlf-plinersolutionsi.netdna-ssl.com/images/layout2009/leftnav/arrow_right.png);
+		background-position: 7px center;
+		background-repeat: no-repeat;
+		background-color: #039;
+		padding-bottom: 2px;
+		padding-left: 20px;
+		width: 97%;
+		padding-top: 2px;
+		font-size: 14px;
+		color: #FFFFFF;
+		line-height: 22px;
+	}
+
+	.featuresheader a {
+		text-decoration: none;
+		color: #FFFFFF;
+	}
+
+
+		.featuresheader a:hover {
+			text-decoration: underline;
+			color: #FFFFFF;
+		}
+
+.featuresExclusive {
+	text-transform: uppercase;
+	border: 1px solid #999999;
+	font-weight: bold;
+	background-color: White;
+	color: #039;
+	text-decoration: none !important;
+	margin-left: 10px;
+	padding: 0px 5px;
+	font-size: 10px;
+	font-family: "Segoe UI", "Helvetica", Tahoma, Arial, sans-serif;
+	/*font-family:'Lucida Sans Unicode','Lucida Grande','Lucida Sans','DejaVu Sans Condensed',sans-serif;*/
+}
+
+.GridViewSubheader {
+	background-repeat: repeat-x;
+	background-position: top center;
+	background-color: #DAE6FF;
+	border-top: 1px solid #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
+	padding: 5px;
+}
+
+table.calculatorTable {
+	border-collapse: collapse;
+}
+
+.calculatorTable th {
+	padding: 4px;
+	background-color: #039;
+	font-weight: bold;
+	font-size: 100%;
+	text-align: center;
+	vertical-align: top;
+	color: #FFFFFF;
+}
+
+.maskedUtility {
+	background: #EBEBEB url("//ezlf-plinersolutionsi.netdna-ssl.com/images/layout2009/grey_gradient.png") repeat-x scroll center top;
+	cursor: pointer;
+	margin: -5px;
+	padding: 5px;
+	position: relative;
+}
+
+	.maskedUtility .maskCategory, .maskedUtility .maskName {
+		font-weight: bold;
+		font-size: 12px;
+	}
+
+	.maskedUtility .maskCategory {
+		font-family: Verdana;
+	}
+
+	.maskedUtility .maskName {
+		font-family: Arial;
+	}
+
+	.maskedUtility .maskName, .maskedUtility .maskAddress {
+		color: #555;
+	}
+
+	.maskedUtility DIV.MaskedRightPanel {
+		position: absolute;
+		top: 5px;
+		right: 5px;
+	}
+
+		.maskedUtility DIV.MaskedRightPanel A.Expander {
+			font-size: 10px;
+			color: Black;
+			font-weight: bold;
+			background: url('//ezlf-plinersolutionsi.netdna-ssl.com/images/plus.gif') no-repeat right center;
+			width: 18px;
+			float: left;
+			display: block;
+			line-height: 46px;
+			height: 46px;
+			text-decoration: none;
+		}
+
+.UtilityFormContainer {
+	position: relative;
+}
+
+	.UtilityFormContainer A.Minimize {
+		float: right;
+		color: Black;
+		font-size: 10px;
+		font-weight: bold;
+		height: 19px;
+		line-height: 19px;
+		text-decoration: none;
+		margin-right: 45px;
+		background: transparent url('//ezlf-plinersolutionsi.netdna-ssl.com/images/minus.gif') no-repeat right center;
+		padding-right: 24px;
+	}
+
+		.UtilityFormContainer A.Minimize:hover {
+			text-decoration: underline;
+		}
+
+div.floatLeft {
+	float: left;
+}
+
+div.floatRight {
+	float: right;
+}
+
+/*css classes for lease options dropdown menu*/
+
+.LeaseOptionsDisplay {
+	display: none;
+	width: 240px;
+	background-color: White;
+	border: 1px solid #999999;
+	border-top: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 50;
+	text-align: left;
+	line-height: 19px;
+	color: #039;
+}
+
+.FileInfoOptionsDisplay {
+	width: 280px;
+	position: relative;
+	z-index: 50;
+	text-align: left;
+	line-height: 19px;
+}
+
+.ScreeningInfoOptionsDisplay {
+	width: 230px;
+	position: relative;
+	z-index: 50;
+	text-align: left;
+	line-height: 19px;
+}
+
+
+	.LeaseOptionsDisplay a:hover, .FileInfoOptionsDisplay a:hover, .ScreeningInfoOptionsDisplay a:hover, .LeaseOptionsDisplay a:active, .FileInfoOptionsDisplay a:active, .ScreeningInfoOptionsDisplay a:active {
+		text-decoration: none;
+		background-color: #DAE6FF;
+	}
+
+.LeaseOptionsDisplay a div {
+	padding: 3px 20px;
+	padding-left: 7px;
+}
+
+.FileInfoOptionsDisplay a div {
+	padding: 5px 10px;
+	font-size: 14px;
+}
+
+.ScreeningInfoOptionsDisplay a div {
+	padding: 5px 10px;
+	font-size: 12px;
+}
+
+
+	.LeaseOptionsDisplay a div.disabled, .FileInfoOptionsDisplay a div.disabled, .ScreeningInfoOptionsDisplay a div.disabled {
+		/*background-color:#EEEEEE !important;*/
+		color: #999 !important;
+	}
+
+	.LeaseOptionsDisplay a div img, .FileInfoOptionsDisplay a div img, .ScreeningInfoOptionsDisplay a div img {
+		/*width: 16px;
+			height: 16px;*/
+		margin-right: 3px;
+		vertical-align: middle;
+	}
+
+	.ScreeningInfoOptionsDisplay a div img {
+		margin-top: -2px;
+	}
+
+	.LeaseOptionsDisplay a div.disabled img, .FileInfoOptionsDisplay a div.disabled img, .ScreeningInfoOptionsDisplay a div.disabled img {
+		opacity: .5;
+	}
+
+	.ScreeningInfoOptionsDisplay a div.approved {
+		color: white !important;
+		font-weight: bold;
+		background-color: #14B714 !important;
+	}
+
+	.ScreeningInfoOptionsDisplay a div.denied {
+		color: white !important;
+		font-weight: bold;
+		background-color: red !important;
+	}
+
+	.ScreeningInfoOptionsDisplay a div.approvedenydisabled {
+		opacity: 0.7;
+		filter: alpha(opacity=70);
+		background-color: #ccc !important;
+	}
+
+	.ScreeningInfoOptionsDisplay a div.yellow {
+		color: #0050b3;
+		/*text-shadow: 0px 1px 3px #fff;*/
+		font-weight: bold;
+		background-color: #FED01B;
+	}
+
+		.ScreeningInfoOptionsDisplay a div.yellow:hover {
+			background-color: #f5b300;
+		}
+
+	.LeaseOptionsDisplay a div:hover, .FileInfoOptionsDisplay a div:hover, .ScreeningInfoOptionsDisplay a div:hover {
+		text-decoration: none;
+		background-color: #DAE6FF;
+	}
+
+.LeaseOptionsDisplay a div.disabled:hover, .FileInfoOptionsDisplay a div.disabled:hover {
+	background-color: transparent !important;
+}
+
+.Paging {
+	margin-top: 5px;
+}
+
+
+	.Paging a.Prev {
+		float: left;
+		height: 20px;
+		width: 36px;
+		background: url(//ezlf-plinersolutionsi.netdna-ssl.com/images/layout2009/loggedinhome/paging-sprite.gif) no-repeat;
+		background-position: 0px -20px;
+	}
+
+		.Paging a.Prev:hover {
+			background-position: 0px 0px;
+		}
+
+	.Paging a.Next {
+		float: left;
+		height: 20px;
+		width: 35px;
+		background: url(//ezlf-plinersolutionsi.netdna-ssl.com/images/layout2009/loggedinhome/paging-sprite.gif) no-repeat;
+		background-position: -37px -20px;
+	}
+
+		.Paging a.Next:hover {
+			float: left;
+			height: 20px;
+			width: 35px;
+			background: url(//ezlf-plinersolutionsi.netdna-ssl.com/images/layout2009/loggedinhome/paging-sprite.gif) no-repeat;
+			background-position: -37px 0;
+		}
+
+	.Paging .Numbers a {
+		float: left;
+	}
+
+		.Paging .Numbers a div {
+			line-height: 18px;
+			padding-left: 5px;
+			padding-right: 5px;
+			height: 18px;
+			border: 1px solid #ccc;
+			border-left: none;
+			background-color: #dae6ff;
+			color: #36c;
+		}
+
+			.Paging .Numbers a div:hover, .Paging .Numbers a div.active {
+				background-color: #36c;
+				color: white;
+			}
+
+.MenuLock {
+	padding-right: 20px; 
+	background: url(//ezlf-plinersolutionsi.netdna-ssl.com/images/layout2013/icon-menu-lock.png) right scroll no-repeat; 
+	-webkit-background-size: 16px;
+	-moz-background-size: 16px;
+	-o-background-size: 16px;
+	background-size: 16px;
+}
+
+.SatisfactionGuarantee {
+	width: 332px;
+	height: 97px;
+}
+
+	.SatisfactionGuarantee > .Description {
+		position: relative;
+		top: 22px;
+		left: 40px;
+		max-width: 170px;
+		margin: 0;
+		font-size: 14px;
+		color: #000;
+		line-height: 1.3;
+		text-shadow:0 0 3px white;
+	}
+
+	.SatisfactionGuarantee > .SealBackground {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+	}
+
+.TrackingPixel {
+	display: none;
+	visibility: hidden;
+	position: absolute;
+}
+
+/*CKEDITOR Styles for plugins*/
+.cke_combo__tokens .cke_combo_text, .cke_combo__tokenspoa .cke_combo_text {
+	width: 125px;
+}
+
+.cke_combopanel {
+	width: 200px !important;
+}
+
+/*Facebook Styles*/
+input[type="button"].fblogin-btn, input[type="submit"].fblogin-btn, button[type="button"].fblogin-btn, button.fblogin-btn {
+	background-image: url('//ezlf-plinersolutionsi.netdna-ssl.com/images/facebook/fb-login-btn.gif');
+	width: 180px;
+	height: 35px;
+	border: none;
+	border-radius: 6px;
+}
+
+	input[type="button"].fblogin-btn:hover, input[type="button"].fblogin-btn:active, input[type="button"].fblogin-btn:focus,
+	button[type="button"].fblogin-btn:hover, button.fblogin-btn:hover,
+	button[type="button"].fblogin-btn:active, button.fblogin-btn:active,
+	button[type="button"].fblogin-btn:focus, button.fblogin-btn:focus {
+		background-position: 0 35px;
+		background-color: transparent !important;
+	}
+
+input[type="button"].fbdisconnect-btn, button[type="button"].fbdisconnect-btn, button.fbdisconnect-btn {
+	background-image: url('//ezlf-plinersolutionsi.netdna-ssl.com/images/facebook/fb-disconnect-btn.gif');
+	width: 180px;
+	height: 35px;
+	border: none;
+	border-radius: 6px;
+}
+
+	.fbdisconnect-btn:hover, .fbdisconnect-btn:active, .fbdisconnect-btn:focus,
+	button[type="button"].fbdisconnect-btn:hover, button.fbdisconnect-btn:hover,
+	button[type="button"].fbdisconnect-btn:active, button.fbdisconnect-btn:active,
+	button[type="button"].fbdisconnect-btn:focus, button.fbdisconnect-btn:focus {
+		background-position: 0 35px;
+		background-color: transparent !important;
+	}
+
+input[type="button"].fbconnect-btn, input[type="submit"].fbconnect-btn, button[type="button"].fbconnect-btn, button.fbconnect-btn {
+	background-image: url('//ezlf-plinersolutionsi.netdna-ssl.com/images/facebook/fb-connect-btn.gif');
+	width: 180px;
+	height: 35px;
+	border: none;
+	border-radius: 6px;
+}
+
+	input[type="button"].fbconnect-btn:hover, input[type="button"].fbconnect-btn:active, input[type="button"].fbconnect-btn:focus,
+	button[type="button"].fbconnect-btn:hover, button.fbconnect-btn:hover,
+	button[type="button"].fbconnect-btn:active, button.fbconnect-btn:active,
+	button[type="button"].fbconnect-btn:focus, button.fbconnect-btn:focus {
+		background-position: 0 35px;
+		background-color: transparent !important;
+	}
+
+.ie input[type="button"].fblogin-btn, .ie input[type="submit"].fblogin-btn, .ie button[type="button"].fblogin-btn, .ie button.fblogin-btn,
+.ie input[type="button"].fbdisconnect-btn, .ie button[type="button"].fbdisconnect-btn, .ie button.fbdisconnect-btn,
+.ie input[type="button"].fbconnect-btn, .ie input[type="submit"].fbconnect-btn, .ie button[type="button"].fbconnect-btn, .ie button.fbconnect-btn {
+	border-radius: 0px;
+}
+
+.fbError {
+	font-weight: bold;
+	color: red;
+	text-align: center;
+	font-size: 14px;
+	padding-bottom: 10px;
+	display: none;
+}
+
+/*Google Styles*/
+input[type="button"].glogin-btn, input[type="submit"].glogin-btn, button[type="button"].glogin-btn, button.glogin-btn {
+	background-image: url('//ezlf-plinersolutionsi.netdna-ssl.com/images/google/google-login-btn.gif');
+	width: 180px;
+	height: 35px;
+	border: none;
+	border-radius: 6px;
+}
+
+	input[type="button"].glogin-btn:hover, input[type="button"].glogin-btn:active, input[type="button"].glogin-btn:focus,
+	button[type="button"].glogin-btn:hover, button.glogin-btn:hover,
+	button[type="button"].glogin-btn:active, button.glogin-btn:active,
+	button[type="button"].glogin-btn:focus, button.glogin-btn:focus {
+		background-position: 0 35px;
+		background-color: transparent !important;
+	}
+
+input[type="button"].gdisconnect-btn, input[type="submit"].gdisconnect-btn, button[type="button"].gdisconnect-btn, button.gdisconnect-btn {
+	background-image: url('//ezlf-plinersolutionsi.netdna-ssl.com/images/google/google-disconnect-btn.gif');
+	width: 180px;
+	height: 35px;
+	border: none;
+	border-radius: 6px;
+}
+
+	input[type="button"].gdisconnect-btn:hover, input[type="button"].gdisconnect-btn:active, input[type="button"].gdisconnect-btn:focus,
+	button[type="button"].gdisconnect-btn:hover, button.gdisconnect-btn:hover,
+	button[type="button"].gdisconnect-btn:active, button.gdisconnect-btn:active,
+	button[type="button"].gdisconnect-btn:focus, button.gdisconnect-btn:focus {
+		background-position: 0 35px;
+		background-color: transparent !important;
+	}
+
+input[type="button"].gconnect-btn, input[type="submit"].gconnect-btn, button[type="button"].gconnect-btn, button.gconnect-btn {
+	background-image: url('//ezlf-plinersolutionsi.netdna-ssl.com/images/google/google-connect-btn.gif');
+	width: 180px;
+	height: 35px;
+	border: none;
+	border-radius: 6px;
+}
+
+	input[type="button"].gconnect-btn:hover, input[type="button"].gconnect-btn:active, input[type="button"].gconnect-btn:focus,
+	button[type="button"].gconnect-btn:hover, button.gconnect-btn:hover,
+	button[type="button"].gconnect-btn:active, button.gconnect-btn:active,
+	button[type="button"].gconnect-btn:focus, button.gconnect-btn:focus {
+		background-position: 0 35px;
+		background-color: transparent !important;
+	}
+
+.ie input[type="button"].glogin-btn, .ie input[type="submit"].glogin-btn, .ie button[type="button"].glogin-btn, .ie button.glogin-btn,
+.ie input[type="button"].gdisconnect-btn, .ie button[type="button"].gdisconnect-btn, .ie button.gdisconnect-btn,
+.ie input[type="button"].gconnect-btn, .ie input[type="submit"].gconnect-btn, .ie button[type="button"].gconnect-btn, .ie button.gconnect-btn {
+	border-radius: 0;
+}
+
+
+/*Clases from Legacy2009.css*/
+#UtilS_SearchResults, .UtilS_SearchResults {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #FEFCF5;
+	border: 1px solid #0E157F;
+	padding: 4px;
+	color: #696969;
+	width: 300px;
+}
+
+.CloseLink, .CloseLink:link, .CloseLink:visited {
+	padding: 2px 18px 2px 0;
+	background: transparent url(//ezlf-plinersolutionsi.netdna-ssl.com/images/16_close.png) no-repeat scroll right bottom;
+	color: #000000;
+	text-decoration: none;
+	font-size: 11px;
+	font-weight: bold;
+	float: right;
+	position: relative;
+}
+
+	.CloseLink:hover, .CloseLink:active {
+		text-decoration: none;
+		color: #B8001A;
+	}
+
+#GetDocBorder {
+	width: 650px;
+	/*border-top: 1px outset #9999cc;
+	border-left: 1px outset #9999cc;
+	border-right: 1px outset #9999cc;*/
+	text-align: left;
+	background-color: #FFFFFF;
+	box-shadow: 0px 1px 5px rgba(0,0,0,0.3);
+}
+
+.ArticleText {
+	padding-top: 5px;
+	font-size: 12px;
+	line-height: 17px;
+}
+
+	.ArticleText p {
+		font-size: 12px;
+		line-height: 17px;
+	}
+
+	.ArticleText img {
+		margin: 8px;
+		/*border: 1px solid #CCCCCC;*/
+	}
+
+.LogoBaseChooser {
+	border: 1px solid #D8DEE8;
+	overflow: auto;
+	width: 400px;
+	height: 115px;
+	white-space: nowrap;
+}
+
+.LogoPreview {
+	margin-top: 5px;
+	width: 200px;
+	height: 75px;
+	overflow: hidden;
+	border: 1px solid #D8DEE8;
+	font-size: 12px;
+}
+
+.FakeDropDown {
+	text-align: left;
+	display: none;
+	position: absolute;
+	background-color: #FFFFFF;
+	border: 1px solid #7F9DB9;
+	border-top-width: 0;
+	padding: 2px;
+	z-index: 45;
+}
+
+.CheckBoxWrap {
+	padding-left: 20px;
+	text-indent: -24px;
+}
+
+.leaseWizardSubHeader {
+	font-weight: bold;
+	font-size: 110%;
+	color: #4464C9;
+}
+/*End Classes from Legacy2009.css*/
+
+@media 
+	(-webkit-min-device-pixel-ratio: 1.5), 
+	(min-resolution: 192dpi) {
+		.MenuLock {
+			background-image: url(//ezlf-plinersolutionsi.netdna-ssl.com/images/layout2013/icon-menu-lock@2x.png);
+		}
+
+		.button-home-viewfreeforms2-canada-off, 
+		.button-home-viewfreeforms2-canada-on, 
+		.button-home-viewfreeforms2-off, 
+		.button-home-viewfreeforms2-on, 
+		.graphic-home-videowizard-off, 
+		.graphic-home-videowizard-on {
+			background: url(//ezlf-plinersolutionsi.netdna-ssl.com/images/sprites-home@2x.png) no-repeat;
+			background-size: 247px 242px;
+		}
+}

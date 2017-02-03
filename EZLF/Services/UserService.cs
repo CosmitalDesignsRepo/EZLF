@@ -8,26 +8,27 @@ using Microsoft.AspNet.Identity.EntityFramework;
 using System.Web.Security;
 using EZLF.Class.Helpers;
 using EZLF.Class;
+using System.Data;
 
 namespace EZLF.Services
 {
     public class UserService : BaseServices, IUserService
     {
         // Service Definitions
-        private readonly Entities db;
-        private static string _operatorRoleId;
-        private static readonly object padlock = new object();
-        //private readonly UserManager<User> userManager;
-        private readonly RoleManager<IdentityRole> roleManager;
+        //private readonly Entities db;
+        //private static string _operatorRoleId;
+        //private static readonly object padlock = new object();
+        ////private readonly UserManager<User> userManager;
+        //private readonly RoleManager<IdentityRole> roleManager;
         private const string _userKey = "FrameworkUser";
         private const string _impernatingUserKey = "FrameworkImpersonatingUser";
         readonly log4net.ILog logger = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
         // Service Methods
 
-        public UserService()
-        {
-            // placeholder
-        }
+        //public UserService()
+        //{
+        //    // placeholder
+        //}
 
 
 
@@ -86,6 +87,40 @@ namespace EZLF.Services
             FormsAuthentication.SignOut();
             HttpContext.Current.Session.Clear();
         }
+
+
+
+        #region Register User
+
+        public USER UpdateUser(USER user)
+        {
+            using (var db = new Entities())
+            {
+                //var newUser = db.USERS.Where(m => m.ID == user.ID).FirstOrDefault();
+                //newUser= ClassExtension.Clone(user);
+
+                db.USERS.Attach(user);
+                db.Entry(user).State = System.Data.Entity.EntityState.Modified;
+                db.SaveChanges();
+
+              //  db.SaveChanges();
+                return user;
+            }
+
+        }
+
+        public USER CreateUser(USER user)
+        {
+            using (var db = new Entities())
+            {
+                user.ID = db.GetNextSequence(EntityUtil.Sequence.USERS_SEQ);
+                var newUser = db.USERS.Add(user);
+                db.SaveChanges();
+                return newUser;
+            }
+
+        }
+        #endregion
 
         /// <summary>
         /// Force a user to log off
@@ -166,6 +201,26 @@ namespace EZLF.Services
             {
                 var user = db.USERS.Where(m => m.EMAIL == userName).FirstOrDefault();
                 return user;
+            }
+        }
+
+
+        //Get countries
+        public List<LT_COUNTRY> GetCountries()
+        {
+            using (var db = new Entities())
+            {
+                var countries = db.LT_COUNTRY.ToList();
+                return countries;
+            }
+        }
+        //Get states
+        public List<LT_STATEPROV> GetStates()
+        {
+            using (var db = new Entities())
+            {
+                var states = db.LT_STATEPROV.ToList();
+                return states;
             }
         }
 

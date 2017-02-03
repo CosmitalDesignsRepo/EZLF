@@ -131,5 +131,7 @@ namespace EZLF.Models
         public virtual DbSet<UTILITYCONTACT2LEASES> UTILITYCONTACT2LEASES { get; set; }
         public virtual DbSet<UTILITYCONTACTINFO> UTILITYCONTACTINFOes { get; set; }
         public virtual DbSet<ZIPCODE> ZIPCODES { get; set; }
+        public virtual DbSet<LT_COUNTRY> LT_COUNTRY { get; set; }
+        public virtual DbSet<LT_STATEPROV> LT_STATEPROV { get; set; }
     }
 }

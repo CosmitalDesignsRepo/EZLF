@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="Model1.Store" Provider="Oracle.ManagedDataAccess.Client" ProviderManifestToken="12.1" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="Model1.Store" Provider="Oracle.ManagedDataAccess.Client" ProviderManifestToken="12.1" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="ACTIONS">
           <Key>
             <PropertyRef Name="ID" />
@@ -817,6 +817,22 @@
           <Property Name="DISPLAYURL" Type="varchar2" MaxLength="512" />
           <Property Name="USEHTTPS" Type="number" Precision="1" Scale="0" Nullable="false" />
         </EntityType>
+        <EntityType Name="LT_COUNTRY">
+          <Key>
+            <PropertyRef Name="COUNTRY_ID" />
+          </Key>
+          <Property Name="COUNTRY_ID" Type="number" Precision="10" Scale="0" Nullable="false" />
+          <Property Name="COUNTRY_DESC" Type="varchar2" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="LT_STATEPROV">
+          <Key>
+            <PropertyRef Name="STATEPROV_ID" />
+          </Key>
+          <Property Name="STATEPROV_ID" Type="number" Precision="10" Scale="0" Nullable="false" />
+          <Property Name="COUNTRY_ID" Type="number" Precision="10" Scale="0" Nullable="false" />
+          <Property Name="STATE_ABBREVIATION" Type="varchar2" MaxLength="10" />
+          <Property Name="STATEPROV_DESC" Type="varchar2" MaxLength="100" />
+        </EntityType>
         <EntityType Name="MAILINGLIST">
           <Key>
             <PropertyRef Name="ID" />
@@ -1321,6 +1337,7 @@
           <Property Name="LEGACYSMARTMOVE" Type="number" Precision="1" Scale="0" Nullable="false" />
           <Property Name="LANDLORDFIRSTNAME" Type="varchar2" MaxLength="64" />
           <Property Name="LANDLORDLASTNAME" Type="varchar2" MaxLength="64" />
+          <Property Name="ISEVICTION" Type="number" Precision="38" Scale="0" />
         </EntityType>
         <EntityType Name="TA_HOME">
           <Key>
@@ -1556,7 +1573,7 @@
           <Property Name="ID" Type="number" Precision="38" Scale="0" Nullable="false" />
           <Property Name="EMAIL" Type="varchar2" MaxLength="128" Nullable="false" />
           <Property Name="PASSWORD" Type="varchar2" MaxLength="32" />
-          <Property Name="USERACCESS" Type="number" Precision="1" Scale="0" />
+          <Property Name="USERACCESS" Type="number" Precision="32" Scale="0" />
           <Property Name="STARTDATE" Type="date" />
           <Property Name="LASTDATE" Type="date" />
           <Property Name="FIRST" Type="varchar2" MaxLength="68" />
@@ -1739,6 +1756,8 @@
           <EntitySet Name="LENDER_STATES" EntityType="Self.LENDER_STATES" Schema="EZLANDLORDFORMS" store:Type="Tables" />
           <EntitySet Name="LINKCATEGORIES" EntityType="Self.LINKCATEGORIES" Schema="EZLANDLORDFORMS" store:Type="Tables" />
           <EntitySet Name="LINKS" EntityType="Self.LINKS" Schema="EZLANDLORDFORMS" store:Type="Tables" />
+          <EntitySet Name="LT_COUNTRY" EntityType="Self.LT_COUNTRY" Schema="EZLANDLORDFORMS" store:Type="Tables" />
+          <EntitySet Name="LT_STATEPROV" EntityType="Self.LT_STATEPROV" Schema="EZLANDLORDFORMS" store:Type="Tables" />
           <EntitySet Name="MAILINGLIST" EntityType="Self.MAILINGLIST" Schema="EZLANDLORDFORMS" store:Type="Tables" />
           <EntitySet Name="MESSAGES" EntityType="Self.MESSAGES" Schema="EZLANDLORDFORMS" store:Type="Tables" />
           <EntitySet Name="MESSAGESUBSCRIPTIONS" EntityType="Self.MESSAGESUBSCRIPTIONS" Schema="EZLANDLORDFORMS" store:Type="Tables" />
@@ -1795,8 +1814,7 @@
           <EntitySet Name="UTILITYCONTACTINFO" EntityType="Self.UTILITYCONTACTINFO" Schema="EZLANDLORDFORMS" store:Type="Tables" />
           <EntitySet Name="ZIPCODES" EntityType="Self.ZIPCODES" Schema="EZLANDLORDFORMS" store:Type="Tables" />
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="Model1" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -3116,6 +3134,7 @@
           <Property Name="LEGACYSMARTMOVE" Type="Boolean" Nullable="false" />
           <Property Name="LANDLORDFIRSTNAME" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
           <Property Name="LANDLORDLASTNAME" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+          <Property Name="ISEVICTION" Type="Decimal" Precision="38" Scale="0" />
         </EntityType>
         <EntityType Name="TA_HOME">
           <Key>
@@ -3351,7 +3370,7 @@
           <Property Name="ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
           <Property Name="EMAIL" Type="String" MaxLength="128" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="PASSWORD" Type="String" MaxLength="32" FixedLength="false" Unicode="false" />
-          <Property Name="USERACCESS" Type="Boolean" />
+          <Property Name="USERACCESS" Type="Int32" />
           <Property Name="STARTDATE" Type="DateTime" />
           <Property Name="LASTDATE" Type="DateTime" />
           <Property Name="FIRST" Type="String" MaxLength="68" FixedLength="false" Unicode="false" />
@@ -3589,7 +3608,25 @@
           <EntitySet Name="UTILITYCONTACT2LEASES" EntityType="Self.UTILITYCONTACT2LEASES" />
           <EntitySet Name="UTILITYCONTACTINFOes" EntityType="Self.UTILITYCONTACTINFO" />
           <EntitySet Name="ZIPCODES" EntityType="Self.ZIPCODE" />
+          <EntitySet Name="LT_COUNTRY" EntityType="Model1.LT_COUNTRY" />
+          <EntitySet Name="LT_STATEPROV" EntityType="Model1.LT_STATEPROV" />
         </EntityContainer>
+        <EntityType Name="LT_COUNTRY">
+          <Key>
+            <PropertyRef Name="COUNTRY_ID" />
+          </Key>
+          <Property Name="COUNTRY_ID" Type="Int32" Nullable="false" />
+          <Property Name="COUNTRY_DESC" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="LT_STATEPROV">
+          <Key>
+            <PropertyRef Name="STATEPROV_ID" />
+          </Key>
+          <Property Name="STATEPROV_ID" Type="Int32" Nullable="false" />
+          <Property Name="COUNTRY_ID" Type="Int32" Nullable="false" />
+          <Property Name="STATE_ABBREVIATION" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="STATEPROV_DESC" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -4954,6 +4991,7 @@
           <EntitySetMapping Name="TA_APPLICATION">
             <EntityTypeMapping TypeName="Model1.TA_APPLICATION">
               <MappingFragment StoreEntitySet="TA_APPLICATION">
+                <ScalarProperty Name="ISEVICTION" ColumnName="ISEVICTION" />
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="TU_APPLICATIONID" ColumnName="TU_APPLICATIONID" />
                 <ScalarProperty Name="APPLICATIONTYPE" ColumnName="APPLICATIONTYPE" />
@@ -5364,6 +5402,24 @@
                 <ScalarProperty Name="TIMEZONE" ColumnName="TIMEZONE" />
                 <ScalarProperty Name="DAYLIGHTSAVINGS" ColumnName="DAYLIGHTSAVINGS" />
                 <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="LT_COUNTRY">
+            <EntityTypeMapping TypeName="Model1.LT_COUNTRY">
+              <MappingFragment StoreEntitySet="LT_COUNTRY">
+                <ScalarProperty Name="COUNTRY_DESC" ColumnName="COUNTRY_DESC" />
+                <ScalarProperty Name="COUNTRY_ID" ColumnName="COUNTRY_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="LT_STATEPROV">
+            <EntityTypeMapping TypeName="Model1.LT_STATEPROV">
+              <MappingFragment StoreEntitySet="LT_STATEPROV">
+                <ScalarProperty Name="STATEPROV_DESC" ColumnName="STATEPROV_DESC" />
+                <ScalarProperty Name="STATE_ABBREVIATION" ColumnName="STATE_ABBREVIATION" />
+                <ScalarProperty Name="COUNTRY_ID" ColumnName="COUNTRY_ID" />
+                <ScalarProperty Name="STATEPROV_ID" ColumnName="STATEPROV_ID" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

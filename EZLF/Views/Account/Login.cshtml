@@ -2,62 +2,85 @@
 @model LoginViewModel
 @{
     ViewBag.Title = "Log in";
+    Layout = "~/Views/Shared/_LayoutNew.cshtml";
 }
 
-<h2>@ViewBag.Title.</h2>
-<div class="row">
-    <div class="col-md-8">
-        <section id="loginForm">
+
             @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
             {
                 @Html.AntiForgeryToken()
-                <h4>Use a local account to log in.</h4>
-                <hr />
-                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-                <div class="form-group">
-                    @Html.LabelFor(m => m._UserName, new { @class = "col-md-2 control-label" })
-                    <div class="col-md-10">
-                        @Html.TextBoxFor(m => m._UserName, new { @class = "form-control" })
-                        @Html.ValidationMessageFor(m => m._UserName, "", new { @class = "text-danger" })
-                    </div>
-                </div>
-                <div class="form-group">
-                    @Html.LabelFor(m => m._Password, new { @class = "col-md-2 control-label" })
-                    <div class="col-md-10">
-                        @Html.PasswordFor(m => m._Password, new { @class = "form-control" })
-                        @Html.ValidationMessageFor(m => m._Password, "", new { @class = "text-danger" })
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="col-md-offset-2 col-md-10">
-                        <div class="checkbox">
-                            @Html.CheckBoxFor(m => m._RememberMe)
-                            @Html.LabelFor(m => m._RememberMe)
+                 <!-- start Sign Box -->
+                <div class="sign-box login-form">
+                    <h1>Log In to Your Account</h1>
+                    <div class="row login-form-row">
+                        <div class="col-sm-7 login-form-col account-information">
+                            <h3>Account Information</h3>
+                            <form id="log-in-form" action="" data-toggle="validator" role="form">
+                                <fieldset>
+                                    <div class="form-group clearfix">
+                                        <label class="control-label" for="login-email-address">Email Address:</label>
+                                        @Html.TextBoxFor(m => m._UserName, new { @class = "form-control" })
+                                        @Html.ValidationMessageFor(m => m._UserName, "", new { @class = "text-danger" })
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+
+                                    <div class="form-group clearfix">
+                                        <label class="control-label" for="login-password">Password:</label>
+                                        <div class="input-holder">
+                                            @Html.PasswordFor(m => m._Password, new { @class = "form-control" })
+                                            @Html.ValidationMessageFor(m => m._Password, "", new { @class = "text-danger" })
+                                            <span data-cloud9-id="96" class="password-icon">
+                                                <i data-cloud9-id="97" class="fa fa-eye" aria-hidden="true"></i>
+                                            </span>
+                                            <input id="pass" id="login-password" class="password form-control" type="password" name="Password" minlength="8" placeholder="********" data-error="That password is invalid" required="">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="custom-forms form-group">
+                                        @Html.CheckBoxFor(m => m._RememberMe)
+                                        <label for="remember-me-on-computer">Remember me on this computer</label>
+
+                                    </div>
+
+                                    <div class="form-group login-btn">
+                                        <span class="icon icon-lock"></span>
+                                        <input type="submit" class="btn btn-blue-shaded" value="SECURE LOG IN">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <a href="#" class="forgot-password">FORGOT YOUR PASSWORD?</a>
+                                    </div>
+
+                                </fieldset>
+                            </form>
+                        </div>
+                        <div class="col-sm-5 login-form-col quick-sign">
+                            <h3>Quick sign up</h3>
+                            <div class="sign-button-box">
+                                <div class="button-box">
+                                    <span class="icon">
+                                        <span class="fa-stack fa-lg">
+                                            <i class="fa fa-square-o fa-stack-1x"></i>
+                                            <i class="fa fa-facebook fa-stack-2x"></i>
+                                        </span>
+                                    </span>
+                                    <input type="submit" class="btn btn-facebook" value="Login with facebook">
+                                </div>
+                                <div class="button-box">
+                                    <span class="icon"><i class="fa fa-google" aria-hidden="true"></i></span>
+                                    <input type="submit" class="btn btn-google" value="Login with google">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="form-group">
-                    <div class="col-md-offset-2 col-md-10">
-                        <input type="submit" value="Log in" class="btn btn-default" />
-                    </div>
-                </div>
-                <p>
-                    @Html.ActionLink("Register as a new user", "Register")
-                </p>
-                @* Enable this once you have account confirmation enabled for password reset functionality
-                    <p>
-                        @Html.ActionLink("Forgot your password?", "ForgotPassword")
-                    </p>*@
+            <!-- end Sign Box -->
+             
+             
             }
-        </section>
-    </div>
-    <div class="col-md-4">
-        <section id="socialLoginForm">
-            @Html.Partial("_ExternalLoginsListPartial", new ExternalLoginListViewModel { ReturnUrl = ViewBag.ReturnUrl })
-        </section>
-    </div>
-</div>
+  
 
-@section Scripts {
+@*@section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
-}
+}*@

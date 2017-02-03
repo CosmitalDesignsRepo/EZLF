@@ -1,0 +1,426 @@
+#BodyContent .hero-container{
+	height: 377px; 
+	margin-top: -20px; 
+	position: relative; 
+	z-index: 10;
+}
+
+#BodyContent .hero-container .HomeDocsList{
+	width: 247px; 
+	background: url(//ezlf-plinersolutionsi.netdna-ssl.com/images/layout2013/bg-transparent-white-80.png) repeat top left; 
+	margin-top: 10px; 
+	position: absolute;
+}
+
+#HomeContent2 .middleColumn{
+	position: absolute; 
+	left: 270px; 
+	width: 525px; 
+	top: 5px; 
+	font-size: 14px; 
+	line-height: 18px; 
+	z-index: 20;
+}
+
+#HomeContent2 .middleColumn h1{
+	font-size: 46px; 
+	color: black; 
+	line-height: 46px; 
+	font-weight: bold; 
+	letter-spacing: -.05em; 
+	white-space: nowrap; 
+	margin: 15px 0;
+}
+
+#HomeContent2 .middleColumn .ArrowBullet{
+	line-height:20px;
+}
+
+#HomeContent2 .cta-container{
+	position: absolute; 
+	left: 265px; 
+	top: 260px;
+}
+
+.hero-container .satisfaction-guarantee-btn{
+	position: absolute; 
+	right: -20px; 
+	top: 256px; 
+	cursor: pointer;
+}
+
+#BodyContent .testimonials-container{
+	margin-top: 10px; margin-bottom: 20px;
+}
+
+#BodyContent .testimonials-container .media-testimonials{
+	float: left; 
+	width: 247px; 
+	height: 120px; 
+	margin-right: 4px; 
+	background-color: #eee; 
+	text-align: center;
+}
+
+#BodyContent .testimonials-container .media-testimonials a{
+	text-decoration: none !important;
+}
+
+#BodyContent .testimonials-container .media-testimonials .DivTestScrollerContent{
+	top: 120px; 
+	padding-top: 10px; 
+	height: 100px;
+}
+#BodyContent .testimonials-container .media-testimonials .DivTestScrollerContent:first-child{
+	top:0px;
+}
+
+#BodyContent .testimonials-container .media-testimonials .DivTestScrollerContent .highlight{
+	font-weight: bold; 
+	color: #3366cc;
+}
+#BodyContent .testimonials-container .media-testimonials .DivTestScrollerContent img{
+	width:240px; 
+	height:40px;
+}
+
+#BodyContent .testimonials-container .client-testimonials{
+	float: left; 
+	width: 498px; 
+	height: 120px; 
+	margin-right: 4px; 
+	background-color: #eee;
+}
+
+#BodyContent .testimonials-container .client-testimonials a{
+	text-decoration: none !important;
+	display: block;
+	padding: 15px;
+}
+
+#BodyContent .testimonials-container .client-testimonials h3{
+	font-size: 18px; line-height: 20px;
+}
+
+#BodyContent .testimonials-container .client-testimonials .scroller-content{
+	position: absolute; 
+	left: 0; 
+	height: 70px;
+}
+
+#BodyContent .testimonials-container .client-testimonials .scroller-content img.star{
+	vertical-align: middle; 
+	margin-left: -1px;
+}
+
+#BodyContent .testimonials-container .trustpilot-container{
+	float: left; 
+	width: 247px; 
+	height: 120px; 
+	background-color: #eee;
+}
+#BodyContent .testimonials-container .trustpilot-container .TrustPilotWidget{
+	padding:10px;
+}
+
+.home-divider{
+	height: 1px; border-bottom: 1px solid #aaa;
+}
+
+.feature-container{
+	float: left; padding: 20px; width: 292px;
+}
+
+.feature-container a{
+	text-decoration: none !important;
+}
+
+.recent-articles-container .recent-article{
+	margin-bottom: 10px; 
+	padding-left: 20px; 
+	padding-right: 20px; 
+	overflow: hidden;
+}
+
+.recent-articles-container .recent-article img.thumbnail{
+	float: left; padding-right: 13px;
+}
+
+.recent-articles-container .section-header{
+	font-family: Segoe UI, Helvetica, Tahoma, Arial, sans-serif; 
+	font-size: 20px; 
+	color: #3366cc; 
+	margin-bottom: 20px; 
+	margin-left: 20px;
+	text-decoration: none;
+}
+
+
+#BodyContent .hero-container{
+	margin-top: 0px;
+	height: auto;
+}
+
+.hero-container .variations, .testimonials-container .variations{
+	display:none;
+	height: 100%;
+}
+
+.hero-container.variant1 .variations.variant1{
+	display: block;
+}
+
+.testimonials-container.variant1 .variations.variant1{
+	display: block;
+}
+
+.hero-container.variant2 .variations.variant2{
+	display: block;
+}
+
+.testimonials-container.variant2 .variations.variant2{
+	display: block;
+}
+
+.hero-container .variant1 .hero-image{
+	background:url(/images/layout2016/hero-bg.jpg) no-repeat;
+	background-size:cover;
+	padding-top: 103px;
+	padding-left: 33px;
+	position: relative;
+	min-height: 453px;
+}
+
+.hero-container .variant1 .options li a{
+	color: #585858;
+	font-family: Roboto;
+	line-height: 24px;
+	margin-bottom: 6px;
+	font-size: 15px;
+	text-decoration: none;
+}
+
+.hero-container .variant1 .options li i.fa-li{
+	color: #f3c000;
+}
+
+.hero-container .variant1 .cta-text{
+	padding-left: 15px;
+	padding-top: 5px;
+	color: #2f2f2f;
+	font-family: Roboto;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 17px;
+	margin-top: 0px;
+	background: #FFF;
+}
+
+.hero-container .variant1 .call-to-action-container{
+	display: block;
+	width: 432px;
+	height: 45px;
+	border-radius: 2px 0 0 2px;
+	position: absolute;
+	bottom: 30px;
+	background: #FFF;
+}
+
+.hero-container .variant1 a.cta-button{
+	width: 153px;
+	height: 45px;
+	border-radius: 2px 0 0 2px;
+	background-color: #dfb208;
+	color: #fff;
+	font-family: Roboto;
+	font-size: 14px;
+	font-weight: 700;
+	text-decoration: none;
+	display: block;
+	text-align: center;
+	padding-top: 14px;
+}
+
+.hero-container .variant1 h1{
+	color: #00369d;
+	font-family: Roboto;
+	font-size: 41px;
+	font-weight: 400;
+	margin-bottom: 30px;
+}
+
+.hero-container .variant2 .hero-text{
+	width: 591px;
+	color: #3c3c3c;
+	font-family: Roboto;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+}
+
+.hero-container .variant2 .hero-image{
+	background:url(/images/layout2016/hero-bg.jpg) no-repeat;
+	background-size:cover;
+	padding-top: 186px;
+	position: relative;
+	min-height: 453px;
+}
+
+.hero-container .variant2 a.cta-button{
+	width: 153px;
+	height: 45px;
+	border-radius: 2px 0 0 2px;
+	background-color: #dfb208;
+	color: #fff;
+	font-family: Roboto;
+	font-size: 14px;
+	font-weight: 700;
+	text-decoration: none;
+	display: block;
+	text-align: center;
+	padding-top: 14px;
+}
+
+.hero-container .variant2 .hero-image{
+	padding-left: 33px;
+}
+
+.hero-container .variant2 h1{
+	color: #3c3c3c;
+	font-family: Roboto;
+	font-size: 44px;
+	font-weight: 400;
+	margin-bottom: 24px;
+}
+
+.hero-container .variant2 .selling-points{
+	padding-top: 72px;
+	padding-bottom: 81px;
+	background: #FFF;
+}
+
+.hero-container .variant2 .selling-points h3{
+	color: #2f2f2f;
+	font-family: "Roboto";
+	font-size: 22px;
+	font-weight: 400;
+}
+
+.hero-container .variant2 .selling-points .description{
+	color: #747474;
+	font-family: Roboto;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 24px;
+}
+
+.hero-container .variant2 .selling-points .icon-circle{
+	border: 1px solid #8972b3;
+	border-radius: 50%;
+	width:71px;
+	height: 71px;
+	display: block;
+}
+
+.hero-container .variant2 .selling-points .icon-circle img.icon{
+	margin-top: 13px;
+	margin-left: 13px;
+}
+
+.testimonials-container .variant1{
+	padding-top: 40px;
+	background-color: #f8f8f8;
+	padding-bottom: 57px;
+}
+
+.testimonials-container .variant1 h2{
+	color: #2568d0;
+	font-family: Roboto;
+	font-size: 21px;
+	font-weight: 400;
+	margin-bottom: 55px;
+	margin-top: 0px;
+	text-align: center;
+}
+
+.testimonials-container .variant2{
+	background: #393939;
+}
+
+.testimonials-container .variant2{
+	padding-top: 23px;
+	padding-bottom: 45px;
+}
+
+.testimonials-container .variant2 h2{
+	color: #fff;
+	font-family: Roboto;
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 25px;
+}
+
+hr.divider{
+	border: 1px solid #979797;
+	margin-bottom: 37px;
+}
+
+
+/*TESTING ENV*/
+
+#NavOuter.testing-env{
+	background: #dc6367;
+}
+
+/*LEGACY CODE*/
+
+.homeContent {
+	position: relative;
+}
+
+.ie .homeContentInner {
+	opacity: inherit;
+}
+
+.ArrowBullet li {
+	background-position: left 0.4em;
+}
+#ContentInner {
+	padding: 10px 10px 0 10px;
+}
+
+.homeBackground {
+	position: absolute;
+	left: 0px;
+	height: 377px;
+	width: 100%;
+	background: transparent url(//ezlf-plinersolutionsi.netdna-ssl.com/images/layout2013/home/bg-homefeature-01.jpg) no-repeat center 0px;
+}
+
+.LoveQuote {
+	font-style: italic;
+	font-weight: bold;
+	font-size: 13px;
+	line-height: 16px;
+	color: #333;
+}
+
+.osx .LoveQuote,
+.LoveQuoteComment {
+	font-weight: normal;
+}
+
+.LoveSignature {
+	font-weight: normal;
+	font-size: 12px;
+}
+
+.osx .LoveSignature {
+	font-weight: lighter;
+}
+
+.LoveQuoteComment {
+	font-size: 12px;
+}

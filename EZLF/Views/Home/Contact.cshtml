@@ -1,17 +1,97 @@
-﻿@{
+﻿@model EZLF.Models.ContactModel
+@{
     ViewBag.Title = "Contact";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var viewPath = Path.GetFileNameWithoutExtension(Server.MapPath(VirtualPath));
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
 
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
+@section SideMenu {
+    @Html.Partial("_SideMenu", viewPath)
+}
 
-<address>
-    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
+@section Logo {
+    <div align="center" style="float:right; padding-right: 25px;">
+        <div style="width:150px;text-align:center;" align="right"><a style="font-size:80%;text-decoration:none;" href="http://www.narpm.org" target="_blank" rel="nofollow">Affiliate Member<br /><img src="/images/logo-narpm.jpg" alt="National Association of Residential Property Managers" border="0" height="53" width="100"><br />National Association of Residential Property Managers</a></div>
+
+    </div>
+}
+
+
+<div style="text-align:left;">
+    <h1>Contact Us</h1>
+
+    @*<div id="BodyContent">*@
+
+
+     
+        <div itemscope itemtype="http://schema.org/Organization" style="float:left;">
+            <strong itemprop="name">ezLandlordForms, LLC</strong><br />
+            <div itemscope itemtype="http://schema.org/PostalAddress">
+                <span itemprop="streetAddress">
+                    1625 Commissioners Road
+                </span><br />
+                <span itemprop="addressLocality">Mullica Hill</span>, <span itemprop="addressRegion">NJ</span> <span itemprop="postalCode">08062</span><br />
+            </div>
+            1-877-FORMS71 (<span itemprop="telephone">1-877-367-6771</span>)
+            <br /><br />
+        </div>
+
+        <div style="clear:left;"></div>
+        Use this form to contact us. We'll get back to you as soon as possible.<br /><br />
+
+@using (Html.BeginForm("Contact", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+
+        <div class="InfoColumnContainer" style="width:485px;">
+            <table border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td>
+                        Name<span>*</span>:
+                        <br />
+                        @Html.TextBoxFor(m => m.FullName, new { @class = "form-control" })
+                    </td>
+                    <td>
+                        Company:
+                        <br />
+                        @Html.TextBoxFor(m => m.Company, new { @class = "form-control" })
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Phone:
+                        <br />
+                        @Html.TextBoxFor(m => m.Phone, new { @class = "form-control" })
+                    </td>
+                    <td>
+                        Fax:
+                        <br />
+                        @Html.TextBoxFor(m => m.Fax, new { @class = "form-control" })
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Email<span id="ctl00_mainContent_valEmail" style="display:none;">*</span>:
+                        <br />
+                        @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" colspan="2">
+                        <b>Message<span id="ctl00_mainContent_valMessage" style="font-weight:bold;display:none;">*</span>:</b>
+                        <br />
+                        @Html.TextAreaFor(m => m.Message, new { @class = "form-control" })
+                        @*<textarea name="ctl00$mainContent$txtMessage" rows="2" cols="20" id="ctl00_mainContent_txtMessage" style="height:100px;width:470px;"></textarea>*@
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="Submit" class="btn btn-success Button" />
+                        
+                    </td>
+                </tr>
+            </table>
+        </div>
+}
+    </div>
+
+

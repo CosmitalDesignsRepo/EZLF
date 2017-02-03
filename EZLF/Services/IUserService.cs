@@ -27,9 +27,22 @@ namespace EZLF.Services
 
         #endregion
 
+        #region Register User
+
+        USER UpdateUser(USER user);
+        USER CreateUser(USER user);
+        #endregion
+
         // function headers for IUserService
         USER GetByID(int ID);
         USER GetByName(string userName);
 
+
+
+
+        //Get countries
+        List<LT_COUNTRY> GetCountries();
+        //Get states
+        List<LT_STATEPROV> GetStates();
     }
 }

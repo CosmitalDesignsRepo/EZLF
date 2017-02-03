@@ -38,5 +38,6 @@ namespace EZLF.Models
         public bool LEGACYSMARTMOVE { get; set; }
         public string LANDLORDFIRSTNAME { get; set; }
         public string LANDLORDLASTNAME { get; set; }
+        public Nullable<decimal> ISEVICTION { get; set; }
     }
 }

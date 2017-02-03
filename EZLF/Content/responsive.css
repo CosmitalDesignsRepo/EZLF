@@ -1,0 +1,523 @@
+/* Responsive 1200 */
+@media (min-width: 1200px) {
+    .container {
+        width: 1040px;
+    }
+    .sign-box {
+        padding: 0 20px;
+    }
+    
+}
+
+/* Responsive 992 */
+@media (max-width: 992px) {
+    /* Fico Section */
+    .fico-section {
+        padding: 38px 0 165px;
+    }
+    
+    .fico-section .title {
+        margin: 0 0 80px;
+    }
+    
+    .fico-section h1 {
+        font-size: 30px;
+    }
+    
+    .fico-section .price {
+        font-size: 15px;
+        margin: 0 0 0 13px;
+    }
+
+    /* Decisions Section */
+    .decisions-holder {
+        margin: -90px auto 0;
+        padding: 30px 0 0;
+    }
+    
+    .decisions-section .info {
+        padding: 25px 20px 0 20px;
+    }
+    
+    .decisions-section .info .title {
+        font-size: 48px;
+        margin: 0 0 25px;
+    }
+    
+    .decisions-section .info .description {
+        font-size: 18px;
+        line-height: 26px;
+        margin: 0 0 25px;
+    }
+    
+    .decisions-section .button-box .btn {
+        float: none;
+        margin: 0 0 10px;
+    }
+    
+    .decisions-section .button-box .text {
+        float: none;
+        margin: 0;
+    }
+    
+    /* Plans Section */
+    .advantages-block .advantage {
+        height: 50px;
+        padding: 5px 15px;
+        line-height: 18px;
+    }
+    
+    .advantages-block .units-holder {
+        height: 270px;
+    }
+    
+    .accounts-block .presence-advantage {
+        height: 50px;
+        padding: 5px 15px;
+    }
+    
+    .accounts-block .account {
+        padding: 20px 20px 20px;
+        height: 270px;
+    }
+    
+    .accounts-block .logo img {
+        max-height: 55px;
+    }
+    
+    .accounts-block .title {
+        line-height: 17px;
+    }
+    
+    .accounts-block .title-text {
+        font-size: 16px;
+    }
+    
+    .accounts-block .price-text {
+        font-size: 14px;
+    }
+    
+    .accounts-block .price span {
+        font-size: 19px;
+        margin: 0 4px 0 0;
+    }
+
+    /*Sign-up form*/
+    .quick-sign .sign-button-box input {
+        width: 180px;
+        padding-left: 35px;
+        font-size: 10px;
+        letter-spacing: 0px;
+    }
+    .quick-sign .button-box .icon {
+        top: 27%;
+        padding: 0 0px;
+    }
+    .quick-sign .button-box .icon .fa {
+        font-size: 17px;
+    }
+    .quick-sign .button-box .icon .fa-square-o {
+        font-size: 24px;
+        top: -24%;
+    }
+    .login-form {
+        margin: 40px auto 0;
+    }
+    .has-danger .password-icon {
+        bottom: 43%;
+    }
+}
+
+/* Responsive 768 */
+@media (max-width: 768px) {
+    /* Fico Section */
+    .fico-section {
+        padding: 25px 0 80px;
+    }
+    
+    .fico-section .title {
+        margin: 0 0 20px;
+    }
+    
+    .fico-section h1 {
+        font-size: 25px;
+        float: none;
+        margin: 0 0 10px;
+    }
+    
+    .fico-section .price {
+        font-size: 15px;
+        margin: 0;
+    }
+
+    /* Decisions Section */
+    .decisions-holder {
+        margin: -50px auto 0;
+        padding: 30px 0 0;
+    }
+    
+    .decisions-section .info {
+        padding: 0 20px 10px;
+    }
+    
+    .decisions-section .info .title {
+        font-size: 30px;
+        margin: 0 0 15px;
+    }
+    
+    .decisions-section .info .description {
+        font-size: 15px;
+        line-height: 1.4;
+        margin: 0 0 15px;
+    }
+    
+    .decisions-section .button-box .text {
+        font-size: 12px;
+        font-weight: 500;
+        letter-spacing: 0;
+        line-height: 1.4;
+    }
+    
+    /* Screening Section */
+    #steps-explanation {
+        padding-top: 35px;
+    }
+    
+    .application-form {
+        display: block;
+    }
+    
+    .big-box {
+        width: 100%;
+        margin: 0 0 20px;
+    }
+    
+    .small-box {
+        width: 100%;
+        margin: 0;
+    }
+    
+    /* Plans Section */
+    .advantages-block {
+        display: none;
+    }
+    
+    .presence-advantages {
+        display: none;
+    }
+    
+    /* Accounts Block */
+    .accounts-block {
+        overflow: hidden;
+        width: 100%;
+        float: none;
+        border-left: 1px solid #c3c3c3;
+    }
+
+    .accounts-block .account {
+        height: 335px;
+        padding: 10px 20px 20px;
+    }
+    
+    .account-box-mobile-info {
+        display: block;
+    }
+    
+    .accounts-block .units {
+        display: block;
+        max-width: 215px;
+        margin: 0 auto;
+    }
+    
+    .accounts-block .button-box {
+        max-width: 215px;
+        margin: 0 auto;
+    }
+    
+    .accounts-block .custom-input-plus-minus .input {
+        width: calc(100% - 30px);
+        height: 36px;
+    }
+    
+    .custom-input-plus-minus .btn {
+        height: 18px;
+        line-height: 1;
+    }
+
+    /* Reasons Section */
+    .reason {
+        margin: 0 0 20px;
+    }
+    
+    /* Modal Section */
+    .payment-modal .modal-dialog {
+        margin: 0 auto;
+        max-width: 500px;
+    }
+    
+    .modal-content .account .account-price {
+        margin: 10px 0 20px 0;
+    }
+    
+    .payment-modal .modal-title {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .payment-modal button.close {
+        position: absolute;
+        top: 10px;
+        right: 30px;
+        width: 10px;
+        height: 10px;
+        z-index: 2;
+        margin: 0;
+        line-height: 1;
+    }
+    
+    .modal-content .modal-plan {
+        border-right: none;
+        border-bottom: 1px dashed #979797;
+    }
+    
+    .modal-content .modal-pay {
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+
+    /*Sign-up form*/    
+    .quick-sign h3,
+    .quick-sign .sign-button-box {
+        margin-top: 20px;    
+    }
+    .quick-sign {
+        text-align: center;
+    }
+    .quick-sign .sign-button-box input {
+        width: 250px;
+        padding-left: 52px;
+        font-size: 13px;
+        letter-spacing: 1px;
+    }
+    .quick-sign .button-box .icon {
+        top: 20%;
+        padding: 0 10px;
+    }
+    .quick-sign .button-box .icon .fa {
+        font-size: 24px;
+    }
+    .quick-sign .button-box .icon .fa-square-o {
+        font-size: 32px;
+        top: -10%;
+    }
+    .account-information .or-login {
+        margin-top: 30px;
+    }
+    .create-account {
+        text-align: center;
+    }
+    /*Sign-up form*/
+
+    /* LogIn Form */
+    .login-form {
+        margin: 0 auto 0;
+        max-width: 500px;
+        padding: 0 10px;
+    }
+    
+    .sign-box h1 {
+        font-size: 34px;
+    }
+    
+    .login-form-row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .login-form-col {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    .login-form-col.account-information {
+        width: 100%;
+    }
+    .login-form-col.quick-sign {
+        width: 100%;
+    }
+    
+    .quick-sign {
+        position: relative;
+        padding: 15px 0 0;
+        margin: 15px 0 0;
+    }
+    
+    .quick-sign:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 15px;
+        right: 15px;
+        background: #e0e0e0;
+        height: 1px;
+    }
+
+    .account-information h3, .quick-sign h3 {
+        margin: 15px 0 30px 0;
+    }
+    
+    .account-information form label {
+        display: block;
+    }
+
+    .login-form .account-information form input {
+        max-width: none;
+    }
+    .account-information .input-holder {
+        max-width: none;
+    }
+    
+    .login-form .login-btn {
+        max-width: none;
+    }
+    
+    .quick-sign .sign-button-box {
+        margin: 0 0 30px;
+    }
+    
+    .quick-sign .sign-button-box:before {
+        display: none;
+    }
+    
+    .login-form .quick-sign .sign-button-box input {
+        max-width: none;
+    }
+    .has-danger .password-icon {
+        bottom: 43%;
+    }
+    .form-group {
+        max-width: none;
+    }
+    .payment-modal .form-group {
+        margin-top: 15px;
+    }
+}
+
+/* Responsive 600 */
+@media (max-width: 600px) {
+    .accounts-block {
+        border-left: none;
+    }
+    
+    .accounts-block .account-box {
+        width: 100%;
+        float: none;
+        margin: 0 0 30px;
+        border-left: 1px solid #c3c3c3;
+    }
+    
+    .accounts-block .account-box:hover {
+        background: #f7faff;
+    }
+    
+    .account-box-mobile-info ul .no {
+        display: none;
+    }
+    
+    .accounts-block .account {
+        height: auto;
+    }
+    
+    .accounts-block .title {
+        height: auto;
+    }
+    
+    .accounts-block .price {
+        height: auto;
+    }
+    .sign-box h1 {
+        font-size: 34px;
+    }
+    .form-group {
+        margin-bottom: 0;
+    }
+    .account-information form input {
+        margin-bottom: 0;
+    }
+    .notice {
+        margin-top: 20px;
+    }
+    .col-xxs {
+       width: 100%; 
+    }
+    .has-error .help-block {
+        max-width: 320px;
+    }
+    .has-error .password-icon {
+        bottom: 45%;
+    }
+}
+
+
+/* Responsive 480 */
+@media (max-width: 480px) {
+    
+    .accounts-block .units {
+        max-width: none;
+    }
+    
+    .accounts-block .button-box {
+        max-width: none;
+    }
+
+    .account-information h3, .quick-sign h3 {
+        margin: 10px 0 40px 0;
+        font-size: 22px;
+    }
+    .notice {
+        font-size: 12px;
+    }
+    .sign-box h1,
+    .account-information h3,
+    .notice, 
+    .or-login {
+        text-align: center;
+    }
+    .account-information .or-login {
+        font-size: 13px;
+    }
+    .account-information .password-icon {
+        bottom: 5%;
+        right: 10%;
+    }
+    .col-mobile {
+        width: 100%;
+    }
+    .quick-sign .button-box .icon {
+        top: 27%;
+        padding: 0 3px;
+    }
+    .quick-sign .button-box .icon .fa {
+        font-size: 19px;
+    }
+    .quick-sign .button-box .icon .fa-square-o {
+        font-size: 25px;
+        top: -22%;
+    }
+    .quick-sign .sign-button-box input {
+        font-size: 11px;
+        padding-left: 40px;
+    }
+    .has-error .password-icon {
+        bottom: 45%;
+    }
+}
+@media (max-width: 375px) {
+    .quick-sign .sign-button-box input {
+        max-width: 210px;
+    }
+    .account-information .password-icon {
+        right: 15%;
+    }
+}
+ 

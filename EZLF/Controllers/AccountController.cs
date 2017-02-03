@@ -11,7 +11,8 @@ using Microsoft.Owin.Security;
 using EZLF.Models;
 using EZLF.Services;
 using EZLF.Class.Helpers;
-
+using EZLF.Class;
+using System.Collections.Generic;
 
 namespace EZLF.Controllers
 {
@@ -30,7 +31,7 @@ namespace EZLF.Controllers
 
         public AccountController()
         {
-
+            this.acctSvc = new UserService();
         }
 
 
@@ -103,6 +104,20 @@ namespace EZLF.Controllers
             return View(model);
         }
 
+
+        //
+        // GET: /Account/Login
+        
+        public ActionResult EditProfile()
+        {
+            var model = new EditProfileModel();
+            BaseServices baseSvc = (BaseServices)acctSvc; // cast to base class
+            model.states = acctSvc.GetStates();
+            model.countries = acctSvc.GetCountries();
+            model.user = baseSvc.GetCurrentUser();
+            return View(model);
+        }
+
         //
         // GET: /Account/VerifyCode
         [AllowAnonymous]
@@ -163,21 +178,29 @@ namespace EZLF.Controllers
         {
             if (ModelState.IsValid)
             {
-                var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
-                var result = await UserManager.CreateAsync(user, model.Password);
-                if (result.Succeeded)
+                List<string> errors = AccountManagement.ValidatePasswordAgainstSettings(model.Password);
+               if (errors.Count>0)
                 {
-                    await SignInManager.SignInAsync(user, isPersistent: false, rememberBrowser: false);
-
-                    // For more information on how to enable account confirmation and password reset please visit http://go.microsoft.com/fwlink/?LinkID=320771
-                    // Send an email with this link
-                    // string code = await UserManager.GenerateEmailConfirmationTokenAsync(user.Id);
-                    // var callbackUrl = Url.Action("ConfirmEmail", "Account", new { userId = user.Id, code = code }, protocol: Request.Url.Scheme);
-                    // await UserManager.SendEmailAsync(user.Id, "Confirm your account", "Please confirm your account by clicking <a href=\"" + callbackUrl + "\">here</a>");
-
-                    return RedirectToAction("Index", "Home");
+                    ViewBag.Error = errors[0];
+                    return View(model);
                 }
-                AddErrors(result);
+               else
+                {
+
+                    USER user = new USER();
+                    user.ADDRESS1 = "";
+                    user.STARTDATE = DateTime.Now;
+                    user.FIRST = model.FirstName;
+                    user.LAST = model.LastName;
+                    user.EMAIL = model.Email;
+                    user.CITY = "";
+                    user.STATE = "PA";
+                    acctSvc.CreateUser(user);
+                    user.PASSWORDHASH = Authentication.ComputePasswordHash((int)user.ID, model.Password);
+                    user.USERACCESS = (int)Shared.UserAccess.Free;
+                    acctSvc.UpdateUser(user);
+                    //model.Password = "";
+                }
             }
 
             // If we got this far, something failed, redisplay form
