@@ -96,6 +96,14 @@
       <HintPath>..\packages\Oracle.ManagedDataAccess.EntityFramework.12.1.2400\lib\net45\Oracle.ManagedDataAccess.EntityFramework.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Postal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=45719375b8b4d528, processorArchitecture=MSIL">
+      <HintPath>..\packages\Postal.Mvc5.1.2.0\lib\net45\Postal.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="RazorEngine, Version=3.4.1.0, Culture=neutral, PublicKeyToken=9ee697374c7e744a, processorArchitecture=MSIL">
+      <HintPath>..\packages\RazorEngine.3.4.1\lib\net45\RazorEngine.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Syncfusion.Compression.Base">
       <HintPath>..\..\ezlandlordforms - Copy\www\bin\Syncfusion.Compression.Base.dll</HintPath>
     </Reference>
@@ -363,6 +371,7 @@
     <Compile Include="Models\FAQCATEGORy.cs">
       <DependentUpon>OracleDBModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\FooterModel.cs" />
     <Compile Include="Models\FREEUSERSALESEMAIL.cs">
       <DependentUpon>OracleDBModel.tt</DependentUpon>
     </Compile>
@@ -376,6 +385,8 @@
       <DependentUpon>OracleDBModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Class\Helpers\DBHelper.cs" />
+    <Compile Include="Models\HeaderModel.cs" />
+    <Compile Include="Models\HomeModel.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\INVESTMENTPERFORMANCE.cs">
       <DependentUpon>OracleDBModel.tt</DependentUpon>
@@ -608,6 +619,8 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\layout2013.css" />
+    <Content Include="Content\layouthomeadjustments.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -623,6 +636,10 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="images\layout2016\e-sign-icon.png" />
+    <Content Include="images\layout2016\forms-icon.png" />
+    <Content Include="images\layout2016\hero-bg.jpg" />
+    <Content Include="images\layout2016\satisfaction-icon.png" />
     <Content Include="Models\OracleDBModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>OracleDBModel.edmx</DependentUpon>
@@ -671,7 +688,7 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Account\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
@@ -695,9 +712,23 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Account\EditProfile.cshtml" />
+    <Content Include="Views\Shared\_Upgrade.cshtml" />
+    <Content Include="Views\Shared\_Statisfaction.cshtml" />
+    <Content Include="Views\Shared\_Buzz.cshtml" />
+    <Content Include="Views\Shared\_Article.cshtml" />
+    <Content Include="Views\Shared\_FromForum.cshtml" />
+    <Content Include="Views\Home\Footer.cshtml" />
+    <Content Include="Views\Shared\_LayoutHome.cshtml" />
+    <Content Include="Views\Home\Header.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Shared\_SideMenu.cshtml" />
+    <Content Include="Views\Emails\_ViewStart.cshtml" />
+    <Content Include="Views\Emails\Web.config" />
+    <Content Include="Views\Emails\Contact.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="images\layout2013\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

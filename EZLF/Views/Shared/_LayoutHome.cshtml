@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/Homecss")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+   @{Html.RenderAction("Header", "Home");}
+    <div id="ContentOuter"  style="background-color:#FFFFFF">
+        <div style="position:relative;">
+
+
+            <div id="ContentInner" style="z-index:3;">
+                <div id="ContentInnerInner" style="position:relative;">
+
+                    <div id="BodyContent">
+                        @RenderBody()
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+                        <footer style="background-color: #f6f6f6;">
+                            @{Html.RenderAction("Footer", "Home");}
+                        </footer>
+
+
+                        @Scripts.Render("~/bundles/jquery")
+                        @Scripts.Render("~/bundles/bootstrap")
+                        @RenderSection("scripts", required: false)
+</body>
+</html>

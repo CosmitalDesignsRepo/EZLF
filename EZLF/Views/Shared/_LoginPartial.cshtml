@@ -15,8 +15,13 @@
 }
 else
 {
+    @*<div style="text-transform: none; float: right; color: #ADC0E7; background-image: none;">
+        <strong>Already a member?</strong>
+        Skip this page by <span style="padding: 0; color: #FED01B;">Logging In</span>.
+    </div>*@
     <ul class="nav navbar-nav navbar-right">
-        <li>@Html.ActionLink("Register", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>
+        <li>@Html.ActionLink("Create New Account", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>
+        <li>@Html.ActionLink("Pricing", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>
         <li>@Html.ActionLink("Log in", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
     </ul>
 }

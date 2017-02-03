@@ -1,0 +1,23 @@
+﻿
+@{
+    Layout = null;
+}
+
+To: @ViewBag.To
+From: @ViewBag.From
+Subject: @ViewBag.Subject
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Contact</title>
+</head>
+<body>
+    ezLandlordForms.com Contact Form
+
+    <br />From: @ViewBag.To (@ViewBag.FullName) Phone: @ViewBag.Phone
+
+    <br />Message:@ViewBag.Message
+
+</body>
+</html>

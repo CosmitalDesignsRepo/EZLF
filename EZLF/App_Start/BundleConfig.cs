@@ -25,7 +25,14 @@ namespace EZLF
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
+                      "~/Content/layout2013.css",
                       "~/Content/site.css"));
+
+            bundles.Add(new StyleBundle("~/Content/Homecss").Include(
+                     "~/Content/bootstrap.css",
+                     "~/Content/layout2013.css",
+                     "~/Content/layouthomeadjustments.css",
+                     "~/Content/site.css"));
         }
     }
 }

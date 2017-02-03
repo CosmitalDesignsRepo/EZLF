@@ -1,0 +1,124 @@
+﻿@model EZLF.Models.HeaderModel
+@{
+    Layout = null;
+}
+
+
+
+<div id="HeaderOuter">
+
+    <div id="HeaderInner">
+
+        <a href="/">
+            <img id="HeaderLogo" width="247" height="71" alt="ez Landlord Forms" src="/images/layout2013/header-logo.png" ; />
+            <div id="HeaderTagline">
+                State-Specific Legal Forms Landlords Trust
+            </div>
+        </a>
+
+
+        <div id="LiveHelpButton">
+            <div style="width:247px;height:46px;">
+                <a href="#" onclick="ChatButton.Click(); return false;">
+                    <img id="imgLiveHelpHeader" src="//www.ezlandlordforms.com/images/layout2013/livehelp/LivePersonAllUsers/header-livehelp-offline-off.png" width="247" height="46" alt="Contact Us" />
+                </a>
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+</div>
+
+@*<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+        </div>
+        
+    </div>
+</div>*@
+
+<div id="NavOuter">
+    
+    <div id="NavInner">
+      
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Forms <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Free Documents</a></li>
+                        <li><a href="#">State-Specific Forms</a></li>
+                        <li><a href="#">Rental Application Forms</a></li>
+                        @*<li role="separator" class="divider"></li>*@
+                        <li><a href="#">Rental / Lease Agreements</a></li>
+                        @*<li role="separator" class="divider"></li>*@
+                        <li><a href="#">Addenda</a></li>
+                        <li><a href="#">Disclosures</a></li>
+                        <li><a href="#">Information Documents</a></li>
+                        <li><a href="#">Notices to Tenants</a></li>
+                        <li><a href="#">Violation Notices</a></li>
+                        <li><a href="#">Late Notices</a></li>
+                        <li><a href="#">Eviction Notices</a></li>
+                        <li><a href="#">Move Out</a></li>
+                        <li><a href="#">Envelopes / Labels</a></li>
+                        <li><a href="#">Management Documents</a></li>
+                        
+                    </ul>
+                </li>
+                <li>@Html.ActionLink("Tenant Screening", "About", "Home")</li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Features <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Lease Builder Wizard</a></li>
+                        <li><a href="#">Document Manager</a></li>
+                        <li><a href="#">Benefits</a></li>
+                      
+                    </ul>
+                </li>
+
+                
+                <li>@Html.ActionLink("Why Us?", "Contact", "Home")</li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resources<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Articles &amp; State Laws</a></li>
+                        <li><a href="#">Q&amp;A Forum</a></li>
+                        <li><a href="#">Attorneys</a></li>
+                        <li><a href="#">Investment & Hard Money Lenders</a></li>
+                        <li><a href="#">Local Investment Clubs</a></li>
+                        <li><a href="#">Affiliate Program</a></li>
+                        <li><a href="#">Rental Investment Calculator</a></li>
+                        <li><a href="#">Links For Landlords</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Help<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Document Printing Help</a></li>
+                        <li><a href="#">ezLandlord Forum</a></li>
+                        <li>@Html.ActionLink("About Us", "About", "Home")</li>
+                        <li>@Html.ActionLink("Contact ezLandlordForms", "Contact", "Home")</li>                   
+                    </ul>
+                </li>
+                @*<li>@Html.ActionLink("My Profile", "EditProfile", "Account")</li>*@
+
+            </ul>
+            @Html.Partial("_LoginPartial")
+        </div>
+     
+    </div>
+
+</div>

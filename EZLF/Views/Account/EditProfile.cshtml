@@ -1,8 +1,191 @@
-﻿
+﻿@model EZLF.Models.EditProfileModel
 @{
-    ViewBag.Title = "EditProfile";
+    ViewBag.Title = "Edit Your Profile and Account Information";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>EditProfile</h2>
+<h2>@ViewBag.Title</h2>
+
+@using (Html.BeginForm("EditProfile", "Account", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+{
+    @*@Html.AntiForgeryToken()*@
+  
+    <hr />
+    @Html.ValidationSummary("", new { @class = "text-danger" })
+    <h4>Log-In Information</h4>
+    
+    <div class="form-group">
+        <div class="col-md-12">
+            This information is used when you log into the website. A valid email address is required for many services.
+        </div>            
+     </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.user.EMAIL, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.user.EMAIL, new { @class = "form-control" })
+        </div>
+    </div>
+
+    <br />
+    <h4>States Where I Rent</h4>
+    <div class="form-group">
+        <div class="col-md-12">
+            Please select the states where you rent properties, so that we can display state-specific forms and State Assist.
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.Label("States:", new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.DropDownListFor(m => m.user.STATE, new SelectList(Model.states, "STATEPROV_ID", "STATEPROV_DESC", Model.user.STATE), "----", new { @class = "form-control" })
+           
+        </div>
+    </div>
+
+
+    <br />
+    <h4>Member Profile</h4>
+    <div class="form-group">
+        <div class="col-md-12">
+            Your member profile information will appear on your customized documents and leases.
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.user.FIRST, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.user.FIRST, new { @class = "form-control" })
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.user.LAST, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.user.LAST, new { @class = "form-control" })
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.user.COMPANY, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.user.COMPANY, new { @class = "form-control" })
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.user.ADDRESS1, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.user.ADDRESS1, new { @class = "form-control" })
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.user.ADDRESS2, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.user.ADDRESS2, new { @class = "form-control" })
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.user.CITY, new { @class = "col-md-2 control-label" })
+        <div class="col-md-4">
+            @Html.TextBoxFor(m => m.user.CITY, new { @class = "form-control" })
+        </div>
+        @Html.LabelFor(m => m.user.STATE, new { @class = "col-md-2 control-label" })
+        <div class="col-md-4">
+            @Html.TextBoxFor(m => m.user.STATE, new { @class = "form-control" })
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.user.ZIP, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.user.ZIP, new { @class = "form-control" })
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-2 control-label">
+            
+        </div>
+        <div class="col-md-12">
+            @Html.CheckBox("IsNoneUS") Check here for non-U.S. locations 
+        </div>
+    </div>
+    <br />
+    <div class="form-group">
+        @Html.LabelFor(m => m.user.PHONE, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.user.PHONE, new { @class = "form-control" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.user.FAX, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.user.FAX, new { @class = "form-control" })
+        </div>
+    </div>
+    <br />
+    <div class="form-group">
+        <div class="col-md-12">
+            Based on your Member Profile, your address will appear as follows on your customized documents:
+
+            <br />
+            <br />
+            @Model.user.FIRST @Model.user.LAST
+            <br />  @Model.user.ADDRESS1
+            <br /> @Model.user.CITY, @Model.user.STATE @Model.user.ZIP
+            <br /> @Model.user.COUNTRY
+        </div>
+    </div>
+
+    <br />
+    <h4>Your Time Zone</h4>
+    <div class="form-group">
+        <div class="col-md-12">
+            Your time zone information is set from your computer's clock.
+        </div>
+    </div>
+
+    <br />
+    <h4>Facebook Connect</h4>
+    <div class="form-group">
+        <div class="col-md-12">
+            This Determines whether or not your EZLF account is connected to Facebook.
+        </div>
+    </div>
+
+    <br />
+    <h4>Google Connect</h4>
+    <div class="form-group">
+        <div class="col-md-12">
+            This Determines whether or not your EZLF account is connected to Google.
+        </div>
+    </div>
+
+    <br />
+    <h4>Newsletter Subscription</h4>
+    <div class="form-group">
+        <div class="col-md-2 control-label">
+
+        </div>
+        <div class="col-md-12">
+            @Html.CheckBox("IsLawUpdated") Send me PA law updates as laws change. 
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-2 control-label">
+
+        </div>
+        <div class="col-md-12">
+            @Html.CheckBox("IsNewsUpdated") Send me quarterly news updates as the industry changes. 
+        </div>
+    </div>
+
+
+
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" class="btn btn-default" value="Register" />
+        </div>
+    </div>
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
 
